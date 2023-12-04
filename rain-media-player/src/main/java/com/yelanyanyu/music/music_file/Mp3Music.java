@@ -10,4 +10,5 @@ public abstract class Mp3Music implements Music{
     private String songName;
     private String artist;
     private long lengthOfSecond;
+    private String filePath;
 }
