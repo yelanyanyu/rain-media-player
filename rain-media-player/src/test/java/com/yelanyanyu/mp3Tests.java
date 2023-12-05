@@ -11,6 +11,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Objects;
 
 /**
@@ -54,5 +56,22 @@ public class mp3Tests {
         });
         playerThread.start();
         playerThread.join(); // 等待播放线程结束
+    }
+
+    @Test
+    public void t2() {
+        LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
+
+        // 添加一些键值对
+        linkedHashMap.put(1, "a");
+        linkedHashMap.put(3, "c");
+        linkedHashMap.put(2, "b");
+        linkedHashMap.put(5, "e");
+        linkedHashMap.put(4, "d");
+
+        // 遍历LinkedHashMap
+        for (Map.Entry<Integer, String> entry : linkedHashMap.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        }
     }
 }
