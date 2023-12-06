@@ -4,12 +4,17 @@ import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
 import com.mpatric.mp3agic.UnsupportedTagException;
+import com.yelanyanyu.music.PlayerDecorator;
+import com.yelanyanyu.music.factory.MusicFactory;
+import com.yelanyanyu.music.factory.WindowsMusicFactory;
+import com.yelanyanyu.music.music_file.Music;
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;
+import javazoom.jl.player.advanced.AdvancedPlayer;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -25,7 +30,6 @@ public class mp3Tests {
     public static ClassLoader classLoader;
     Player player;
 
-    @Before
     public void before() {
         classLoader = Thread.currentThread().getContextClassLoader();
     }
@@ -73,5 +77,22 @@ public class mp3Tests {
         for (Map.Entry<Integer, String> entry : linkedHashMap.entrySet()) {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
+    }
+
+    @Test
+    public void t3() {
+        MusicFactory musicFactory = new WindowsMusicFactory();
+        Music mp3Music = musicFactory.createMp3Music("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources\\1.mp3");
+        log.info("music: {}", mp3Music);
+    }
+
+    @Test
+    public void t4() throws InterruptedException, FileNotFoundException, JavaLayerException {
+        PlayerDecorator player = new PlayerDecorator("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources\\1.mp3");
+        player.play();
+        Thread.sleep(5000);
+        player.pause();
+        Thread.sleep(5000);
+        player.resume();
     }
 }

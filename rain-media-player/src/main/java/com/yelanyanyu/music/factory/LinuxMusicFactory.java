@@ -1,5 +1,7 @@
 package com.yelanyanyu.music.factory;
 
+import com.yelanyanyu.music.music_file.Music;
+
 /**
  * For now, Linux support are not feasible.
  *
@@ -8,12 +10,17 @@ package com.yelanyanyu.music.factory;
  */
 public class LinuxMusicFactory implements MusicFactory {
     @Override
-    public void createMp3Music(String filePath) {
+    public Music createMp3Music(String filePath) {
         // wait
+
+        return null;
     }
 
     @Override
-    public void createFlacMusic(String filePath) {
+    public Music createFlacMusic(String filePath) {
         // wait
+
+
+        return null;
     }
 }

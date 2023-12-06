@@ -62,6 +62,7 @@ public class MusicPlayerUi {
 
 
     private void initUi() {
+        log.info("MusicPlayerUi init...");
         // Main interface JFrame
         mainFrame = new JFrame("Music Selection Interface");
         JButton selectMusicButton = new JButton("Select Music File");
