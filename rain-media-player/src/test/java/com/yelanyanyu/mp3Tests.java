@@ -4,13 +4,12 @@ import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
 import com.mpatric.mp3agic.UnsupportedTagException;
-import com.yelanyanyu.music.PlayerDecorator;
+import com.yelanyanyu.music.Mp3PlayerDecorator;
 import com.yelanyanyu.music.factory.MusicFactory;
 import com.yelanyanyu.music.factory.WindowsMusicFactory;
-import com.yelanyanyu.music.music_file.Music;
+import com.yelanyanyu.music.music_file.AbstractMusic;
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.Player;
-import javazoom.jl.player.advanced.AdvancedPlayer;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
@@ -39,8 +38,8 @@ public class mp3Tests {
         Thread playerThread = new Thread(() -> {
             try {
                 System.out.println("run...");
-                String path = Objects.requireNonNull(classLoader.getResource("1.mp3")).getFile().substring(1);
-                player = new Player(Objects.requireNonNull(classLoader.getResourceAsStream("1.mp3")));
+                String path = Objects.requireNonNull(classLoader.getResource("4.mp3")).getFile().substring(1);
+                player = new Player(Objects.requireNonNull(classLoader.getResourceAsStream("4.mp3")));
                 Mp3File mp3File = new Mp3File(path);
                 if (mp3File.hasId3v2Tag()) {
                     ID3v2 id3v2Tag = mp3File.getId3v2Tag();
@@ -82,17 +81,22 @@ public class mp3Tests {
     @Test
     public void t3() {
         MusicFactory musicFactory = new WindowsMusicFactory();
-        Music mp3Music = musicFactory.createMp3Music("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources\\1.mp3");
-        log.info("music: {}", mp3Music);
+        AbstractMusic mp3AbstractMusic = musicFactory.createMp3Music("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources\\4.mp3");
+        log.info("music: {}", mp3AbstractMusic);
     }
 
     @Test
     public void t4() throws InterruptedException, FileNotFoundException, JavaLayerException {
-        PlayerDecorator player = new PlayerDecorator("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources\\1.mp3");
+        Mp3PlayerDecorator player = new Mp3PlayerDecorator("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources\\4.mp3");
         player.play();
         Thread.sleep(5000);
         player.pause();
         Thread.sleep(5000);
         player.resume();
+    }
+
+    @Test
+    public void t5() {
+//        SimpleMusicPlayer.INSTANCE.init("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources");
     }
 }

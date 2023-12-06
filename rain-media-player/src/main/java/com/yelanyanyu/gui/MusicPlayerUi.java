@@ -1,8 +1,8 @@
 package com.yelanyanyu.gui;
 
-import com.yelanyanyu.music.music_file.Music;
 import com.yelanyanyu.music.player.MusicPlayer;
 import com.yelanyanyu.music.player.SimpleMusicPlayer;
+import com.yelanyanyu.music.player.WindowsMp3MusicStrategy;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.swing.*;
@@ -11,7 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
-import java.util.AbstractMap;
 
 /**
  * @author yelanyanyu
@@ -76,8 +75,9 @@ public class MusicPlayerUi {
                 String folderPath = selectedFolder.getAbsolutePath();
                 // Use the folderPath as needed
                 log.info("Selected folder: {}", folderPath);
-                // TODO: 初始化MusicPlayer, include play list
-
+                SimpleMusicPlayer simpleMusicPlayer = (SimpleMusicPlayer) musicPlayer;
+                // 这里写死. 以后再改
+                simpleMusicPlayer.init(folderPath, new WindowsMp3MusicStrategy());
             }
         });
 

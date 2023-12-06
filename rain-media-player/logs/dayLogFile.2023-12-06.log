@@ -1,9 +1,9 @@
 2023-12-06 15:15:46.220  DEBUG [main] c.y.m.f.WindowsMusicFactory - song: “¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
-2023-12-06 15:15:46.223  INFO  [main] c.y.mp3Tests - music: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=null)
+2023-12-06 15:15:46.223  INFO  [main] c.y.mp3Tests - abstractMusic: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=null)
 2023-12-06 15:16:59.555  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
-2023-12-06 15:16:59.558  INFO  [main] c.y.mp3Tests - music: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=null)
-2023-12-06 15:17:59.063  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@a1153bc
-2023-12-06 15:17:59.066  INFO  [main] c.y.mp3Tests - music: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=com.yelanyanyu.music.music_file.impl.OriginMusicState@a1153bc)
+2023-12-06 15:16:59.558  INFO  [main] c.y.mp3Tests - abstractMusic: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=null)
+2023-12-06 15:17:59.063  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@a1153bc
+2023-12-06 15:17:59.066  INFO  [main] c.y.mp3Tests - abstractMusic: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@a1153bc)
 2023-12-06 16:43:53.096  DEBUG [main] c.y.m.PlayerDecorator - thread: null
 2023-12-06 16:44:03.235  DEBUG [main] c.y.m.PlayerDecorator - thread: null
 2023-12-06 16:44:33.334  DEBUG [main] c.y.m.PlayerDecorator - thread: null
@@ -21,3 +21,1410 @@
 2023-12-06 17:39:34.491  DEBUG [Thread-0] c.y.m.PlayerDecorator - thread run...
 2023-12-06 17:40:16.109  DEBUG [Thread-0] c.y.m.PlayerDecorator - thread run...
 2023-12-06 17:48:35.491  DEBUG [Thread-0] c.y.m.PlayerDecorator - thread run...
+2023-12-06 18:50:05.495  DEBUG [main] c.y.m.p.SimpleMusicPlayer - file: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-06 18:52:43.700  DEBUG [main] c.y.m.p.SimpleMusicPlayer - file: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.flac
+2023-12-06 18:52:43.702  DEBUG [main] c.y.m.p.SimpleMusicPlayer - file: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 18:52:43.703  DEBUG [main] c.y.m.p.SimpleMusicPlayer - file: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\logback-test.xml
+2023-12-06 18:53:46.630  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: flac
+2023-12-06 18:53:46.634  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: mp3
+2023-12-06 18:53:46.635  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: xml
+2023-12-06 18:54:17.314  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:17.317  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:17.317  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:29.539  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:29.542  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:29.542  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:56.776  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:56.779  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:54:56.780  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:55:17.557  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: true
+2023-12-06 18:55:17.561  INFO  [main] c.y.m.p.SimpleMusicPlayer - abstractMusic add to list: null
+2023-12-06 18:55:17.563  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: true
+2023-12-06 18:55:17.563  INFO  [main] c.y.m.p.SimpleMusicPlayer - abstractMusic add to list: null
+2023-12-06 18:55:17.564  DEBUG [main] c.y.m.p.SimpleMusicPlayer - format: false
+2023-12-06 18:55:33.253  INFO  [main] c.y.m.p.SimpleMusicPlayer - abstractMusic add to list: null
+2023-12-06 18:55:33.256  INFO  [main] c.y.m.p.SimpleMusicPlayer - abstractMusic add to list: null
+2023-12-06 19:01:01.469  DEBUG [main] c.y.m.p.SimpleMusicPlayer - defalut
+2023-12-06 19:01:01.471  DEBUG [main] c.y.m.p.SimpleMusicPlayer - defalut
+2023-12-06 19:01:26.602  DEBUG [main] c.y.m.f.WindowsMusicFactory - create abstractMusic: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 19:01:26.623  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@7d4f9aae
+2023-12-06 19:01:26.624  INFO  [main] c.y.m.p.SimpleMusicPlayer - abstractMusic add to list: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@7d4f9aae)
+2023-12-06 19:04:05.027  DEBUG [main] c.y.m.f.WindowsMusicFactory - create abstractMusic: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 19:04:05.052  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@506ae4d4
+2023-12-06 19:04:05.053  INFO  [main] c.y.m.p.SimpleMusicPlayer - abstractMusic add to list: AbstractMp3Music(songName=∞◊‘Î“Ù, artist=“¯¡Ÿ, lengthOfSecond=328, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state=com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@506ae4d4)
+2023-12-06 19:04:05.061  DEBUG [main] c.y.m.f.WindowsMusicFactory - create abstractMusic: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 19:04:05.070  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@5e600dd5
+2023-12-06 19:04:05.070  INFO  [main] c.y.m.p.SimpleMusicPlayer - abstractMusic add to list: AbstractMp3Music(songName=≥Ÿ≥Ÿ, artist=“¯¡Ÿ, lengthOfSecond=258, filePath=D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state=com.yelanyanyu.abstractMusic.music_file.impl.OriginMusicState@5e600dd5)
+2023-12-06 21:42:07.486  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 21:45:57.900  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 21:46:09.805  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 21:46:10.920  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@3c22fc4c, player=com.yelanyanyu.music.Mp3PlayerDecorator@460d0a57)
+2023-12-06 21:46:10.921  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:46:10.922  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 21:46:10.931  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 21:46:10.931  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:46:10.933  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 21:50:51.147  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 21:50:52.274  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4b0b0854, player=com.yelanyanyu.music.Mp3PlayerDecorator@19bb07ed)
+2023-12-06 21:50:52.275  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:50:52.276  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 21:50:52.284  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@57c758ac, player=com.yelanyanyu.music.Mp3PlayerDecorator@a9cd3b1)
+2023-12-06 21:50:52.284  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:50:58.830  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 21:52:16.577  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 21:52:17.709  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@3c22fc4c, player=com.yelanyanyu.music.Mp3PlayerDecorator@460d0a57)
+2023-12-06 21:52:17.711  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:52:17.712  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 21:52:17.720  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 21:52:17.720  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:52:17.722  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 21:53:32.843  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 21:53:33.888  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@3c22fc4c, player=com.yelanyanyu.music.Mp3PlayerDecorator@460d0a57)
+2023-12-06 21:53:33.889  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:53:33.891  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 21:53:33.899  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 21:53:33.899  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 21:53:33.901  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:26:07.933  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 22:26:09.093  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@460d0a57, player=com.yelanyanyu.music.Mp3PlayerDecorator@47d90b9e)
+2023-12-06 22:26:09.094  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:26:09.095  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 22:26:09.103  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@2f7c2f4f, player=com.yelanyanyu.music.Mp3PlayerDecorator@6af93788)
+2023-12-06 22:26:09.103  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:26:09.105  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:26:32.836  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 22:26:33.993  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@460d0a57, player=com.yelanyanyu.music.Mp3PlayerDecorator@47d90b9e)
+2023-12-06 22:26:33.994  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:26:33.995  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 22:26:34.004  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@2f7c2f4f, player=com.yelanyanyu.music.Mp3PlayerDecorator@6af93788)
+2023-12-06 22:26:34.004  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:26:34.006  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:37:42.084  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 22:37:43.359  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@460d0a57, player=com.yelanyanyu.music.Mp3PlayerDecorator@47d90b9e)
+2023-12-06 22:37:43.360  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:37:43.361  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3
+2023-12-06 22:37:43.369  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\2.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@2f7c2f4f, player=com.yelanyanyu.music.Mp3PlayerDecorator@6af93788)
+2023-12-06 22:37:43.370  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:37:43.372  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:37:43.372  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.664  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.667  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.669  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.671  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.673  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.675  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.677  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.679  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.681  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.683  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.685  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.687  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.689  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.690  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.692  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.694  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.695  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.697  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.698  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.700  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.701  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.703  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.704  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.832  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.833  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.835  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.837  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.838  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.965  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.966  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.967  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.968  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.968  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:43.969  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.095  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.097  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.097  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.223  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.223  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.224  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.224  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.224  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.225  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.350  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.350  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.351  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.351  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.351  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.478  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.478  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.479  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.479  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.479  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.606  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.606  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.606  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.732  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.732  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.732  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.733  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.733  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.859  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.859  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.859  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.984  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.984  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.984  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.985  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:44.985  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.111  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.111  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.112  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.112  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.112  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.238  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.238  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.238  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.363  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.363  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.363  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.364  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.364  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.490  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.490  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.490  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.490  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.491  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.616  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.616  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.616  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.617  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.617  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.743  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.743  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.743  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.744  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.744  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.744  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.869  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.869  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.869  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.869  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.870  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.995  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.995  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.995  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.995  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:45.995  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.121  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.121  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.121  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.122  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.122  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.248  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.248  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.248  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.248  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.249  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.249  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.374  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.374  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.374  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.375  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.375  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.501  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.501  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.501  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.501  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.502  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.627  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.627  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.627  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.627  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.628  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.628  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.754  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.754  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.754  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.754  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.755  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.881  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.881  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.881  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.881  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:46.882  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.007  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.007  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.007  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.007  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.007  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.133  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.133  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.133  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.134  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.134  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.134  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.260  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.260  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.260  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.261  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.261  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.387  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.387  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.387  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.387  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.388  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.513  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.513  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.513  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.514  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.514  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.514  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.639  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.639  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.639  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.639  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.640  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.766  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.766  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.766  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.766  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.766  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.893  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.893  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.893  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.894  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:47.894  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.020  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.020  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.020  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.020  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.020  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.146  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.146  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.146  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.147  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.147  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.147  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.272  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.272  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.272  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.272  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.272  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.399  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.399  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.399  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.399  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.400  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.525  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.525  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.525  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.525  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.526  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.526  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.651  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.651  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.651  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.651  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.652  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.778  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.778  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.778  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.778  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.779  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.904  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.904  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.904  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.904  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.905  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:48.905  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.031  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.031  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.031  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.031  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.031  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.157  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.157  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.157  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.157  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.157  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.283  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.283  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.283  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.283  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.284  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.409  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.409  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.409  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.410  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.410  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.535  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.535  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.535  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.535  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.536  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.536  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.661  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.661  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.661  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.661  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.663  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.788  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.788  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.788  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.788  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.788  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.913  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.913  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.913  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.913  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.913  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:49.914  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.040  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.040  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.040  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.040  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.040  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.166  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.166  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.166  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.166  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.166  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.292  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.292  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.292  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.292  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.292  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.419  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.419  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.419  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.419  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.419  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.546  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.546  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.546  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.546  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.546  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.546  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.672  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.672  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.672  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.672  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.672  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.798  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.798  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.798  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.798  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.798  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.923  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.923  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.923  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.923  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.923  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:50.923  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.050  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.050  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.050  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.050  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.050  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.175  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.175  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.175  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.175  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.175  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.301  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.301  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.301  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.301  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.301  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.427  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.427  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.427  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.427  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.427  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.427  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.554  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.554  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.554  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.554  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.554  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.679  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.679  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.679  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.679  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.680  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.806  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.806  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.806  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.806  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.806  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.931  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.931  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.931  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.931  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:51.931  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.058  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.058  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.058  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.058  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.058  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.058  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.185  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.185  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.185  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.185  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.185  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.311  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.311  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.311  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.311  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.311  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.437  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.437  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.437  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.437  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.438  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.438  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.564  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.564  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.564  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.564  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.565  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.691  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.691  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.692  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.692  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.692  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.819  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.819  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.819  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.819  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.820  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.946  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.946  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.946  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.946  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.947  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:52.947  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.072  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.325  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.325  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.325  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.325  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.325  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.326  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.452  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.452  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.452  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.452  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.453  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.578  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.578  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.578  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.578  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.578  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.704  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.704  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.704  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.704  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.704  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.704  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.831  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.831  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.831  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.831  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.831  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.956  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.956  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.956  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.956  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:53.956  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.082  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.082  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.082  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.082  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.082  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.207  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.207  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.207  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.207  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.207  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.332  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.332  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.332  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.332  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.332  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.457  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.457  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.457  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.457  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.457  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.458  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.584  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.584  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.584  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.584  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.584  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.710  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.710  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.710  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.710  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.710  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.835  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.835  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.835  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.835  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.835  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.835  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:54.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.085  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.085  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.085  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.085  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.085  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.211  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.211  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.211  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.211  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.211  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.336  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.336  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.336  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.336  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.336  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.461  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.461  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.461  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.461  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.461  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.587  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.587  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.587  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.587  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.587  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.587  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.713  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.713  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.713  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.713  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.713  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.838  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.838  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.838  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.838  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.838  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.963  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.963  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.963  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.963  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.963  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:55.963  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.089  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.089  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.089  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.089  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.089  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.214  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.214  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.214  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.214  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.214  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.340  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.340  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.340  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.340  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.340  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.465  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.465  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.465  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.465  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.465  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.465  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.591  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.591  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.591  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.591  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.591  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.968  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.968  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.968  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.968  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:56.968  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.094  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.094  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.094  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.094  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.094  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.094  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.347  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.347  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.347  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.347  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.347  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.472  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.472  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.472  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.472  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.472  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.598  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.598  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.598  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.598  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.598  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.598  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.849  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.849  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.849  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.849  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.849  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.975  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.975  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.975  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.975  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:57.975  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.100  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.100  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.100  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.100  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.100  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.226  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.226  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.226  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.226  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.226  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.226  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.352  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.352  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.352  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.352  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.352  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.478  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.478  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.478  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.478  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.478  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.604  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.604  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.604  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.604  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.604  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.604  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.729  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.729  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.729  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.729  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.729  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.855  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.855  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.855  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.855  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.855  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.980  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.980  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.980  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.980  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:58.980  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.107  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.107  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.107  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.107  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.107  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.107  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.232  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.232  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.232  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.232  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.232  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.358  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.358  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.358  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.358  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.358  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.483  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.483  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.483  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.483  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.483  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.609  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.609  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.609  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.609  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.609  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.734  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.734  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.734  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.734  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.734  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.734  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.860  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.860  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.860  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.860  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.860  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.985  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.985  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.985  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.985  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:37:59.985  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.111  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.111  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.111  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.111  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.111  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.237  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.364  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.364  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.364  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.364  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.364  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.511  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.511  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.647  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.648  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.648  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.787  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.787  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.913  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.914  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:00.914  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.050  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.051  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.187  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.187  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.187  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.313  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.313  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.313  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.445  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.572  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.572  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.572  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.572  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.698  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.698  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.698  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.698  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.698  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.823  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.823  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.823  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.823  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.823  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.948  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.948  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.948  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.948  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.948  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:01.948  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.073  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.199  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.324  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.324  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.324  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.324  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.324  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.324  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.450  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.450  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.450  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.450  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.450  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.577  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.577  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.577  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.577  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.577  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.702  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.702  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.702  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.702  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.702  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.828  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.828  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.828  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.828  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.828  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.954  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.954  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.954  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.954  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.954  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:02.954  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.079  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.079  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.079  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.079  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.079  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.205  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.205  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.205  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.205  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.205  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.330  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.330  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.330  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.330  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.330  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.455  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.455  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.455  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.455  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.455  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.455  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.581  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.581  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.581  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.581  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.581  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.707  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.707  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.707  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.707  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.707  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.833  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.833  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.833  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.833  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.833  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:03.960  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.087  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.087  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.087  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.087  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.087  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.212  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.212  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.212  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.212  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.212  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.338  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.338  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.338  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.338  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.339  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.464  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.464  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.464  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.464  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.464  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.464  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.590  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.590  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.590  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.590  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.590  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.716  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.842  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.967  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.967  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.967  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.967  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.967  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:04.967  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.093  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.093  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.093  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.093  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.093  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.218  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.218  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.218  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.218  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.218  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.344  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.344  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.344  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.344  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.344  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.469  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.469  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.469  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.469  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.469  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.594  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.594  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.594  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.594  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.594  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.594  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.719  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.719  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.719  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.719  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.719  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.845  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.845  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.845  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.845  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.845  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.970  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.970  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.970  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.970  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:05.970  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.096  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.221  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.348  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.348  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.348  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.348  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.348  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.474  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.474  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.474  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.474  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.474  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.474  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.599  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.599  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.599  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.599  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.599  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.724  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.851  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.851  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.851  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.851  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.851  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.976  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.976  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.976  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.976  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:06.976  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.102  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.102  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.102  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.102  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.102  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.227  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.227  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.227  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.227  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.227  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.228  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.353  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.353  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.353  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.353  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.353  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.480  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.480  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.480  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.480  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.480  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.605  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.731  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.731  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.731  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.731  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.731  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.858  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.983  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.983  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.983  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.983  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:07.983  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.110  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.110  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.110  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.110  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.110  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.235  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.235  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.235  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.235  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.235  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.235  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.361  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.361  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.361  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.361  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.361  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.487  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.487  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.487  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.487  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.487  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.612  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.612  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.612  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.612  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.612  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.737  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.737  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.737  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.737  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.737  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.737  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.864  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.864  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.864  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.864  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.865  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.991  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.991  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.991  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.991  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:08.991  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.116  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.116  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.116  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.116  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.116  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.116  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.242  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.242  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.242  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.242  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.242  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.367  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.367  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.367  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.367  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:38:09.367  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:13.407  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 22:39:14.548  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@460d0a57, player=com.yelanyanyu.music.Mp3PlayerDecorator@47d90b9e)
+2023-12-06 22:39:14.549  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:39:14.550  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 22:39:14.560  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@2f7c2f4f, player=com.yelanyanyu.music.Mp3PlayerDecorator@6af93788)
+2023-12-06 22:39:14.561  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:39:14.563  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:39:14.671  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.075  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.187  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.297  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.407  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.516  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.624  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.733  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.843  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:15.952  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.060  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.169  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.279  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.391  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.499  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.608  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.717  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.826  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:16.935  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.042  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.151  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.260  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.370  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.481  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.591  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.701  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.807  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:17.914  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.026  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.136  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.246  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.357  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.466  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.573  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.682  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.793  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:18.902  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.010  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.118  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.226  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.335  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.443  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.550  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.659  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.769  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.878  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:19.987  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.095  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.205  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.313  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.423  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.533  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.643  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.755  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.864  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:20.973  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.082  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.192  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.300  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.408  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.517  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.624  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.729  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.839  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:21.950  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.058  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.165  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.273  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.381  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.486  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.594  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.702  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.810  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:22.917  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.027  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.134  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.245  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.352  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.460  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.568  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.680  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.790  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:23.898  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.010  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.119  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.229  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.335  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.445  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.556  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.666  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.777  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.886  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:24.995  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.102  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.213  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.321  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.432  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.539  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.648  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.760  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.870  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:25.977  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.087  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.198  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.306  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.418  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.528  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.636  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.746  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.856  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:26.963  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:27.072  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:27.179  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:27.287  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:27.396  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:39:27.504  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - state: 1
+2023-12-06 22:43:02.607  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 22:43:03.754  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@460d0a57, player=com.yelanyanyu.music.Mp3PlayerDecorator@47d90b9e)
+2023-12-06 22:43:03.755  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:43:03.756  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 22:43:03.766  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@2f7c2f4f, player=com.yelanyanyu.music.Mp3PlayerDecorator@6af93788)
+2023-12-06 22:43:03.766  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:43:03.768  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:48:57.479  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 22:48:58.589  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@19bb07ed, player=com.yelanyanyu.music.Mp3PlayerDecorator@10e41621)
+2023-12-06 22:48:58.590  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:48:58.591  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 22:48:58.599  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@a9cd3b1, player=com.yelanyanyu.music.Mp3PlayerDecorator@13e39c73)
+2023-12-06 22:48:58.600  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:49:04.717  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:57:15.834  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 22:57:16.957  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-null: null   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 22:57:16.957  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 22:57:16.958  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 22:57:16.968  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 22:57:16.969  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:57:16.970  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 22:57:16.978  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 22:57:16.979  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:57:16.981  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:58:03.247  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 22:58:04.328  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-null: null   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 22:58:04.329  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 22:58:04.330  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 22:58:04.340  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 22:58:04.341  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:58:04.341  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 22:58:04.350  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 22:58:04.350  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:58:04.352  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:58:39.017  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 22:58:40.134  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-null: null   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 22:58:40.135  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 22:58:40.136  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 22:58:40.146  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 22:58:40.147  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:58:40.147  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 22:58:40.156  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 22:58:40.156  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:58:40.158  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 22:58:45.363  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - done...
+2023-12-06 22:59:18.444  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 22:59:19.522  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-null: null   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 22:59:19.523  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 22:59:19.524  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 22:59:19.534  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 22:59:19.534  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:59:19.535  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 22:59:19.542  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 22:59:19.543  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 22:59:19.544  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:00:09.580  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 23:00:10.659  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-null: null   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 23:00:10.660  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 23:00:10.661  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 23:00:10.670  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 23:00:10.672  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:00:10.672  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 23:00:10.679  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 23:00:10.680  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:00:10.682  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:00:15.899  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 0
+2023-12-06 23:00:52.366  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 23:00:53.450  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-null: null   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 23:00:53.450  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 23:00:53.451  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 23:00:53.461  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 23:00:53.462  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:00:53.462  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 23:00:53.469  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 23:00:53.469  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:00:53.471  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:00:58.690  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:00:58.691  DEBUG [Thread-0] c.y.m.p.SimpleMusicPlayer - next song: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 23:00:58.692  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:05:18.227  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:05:18.228  DEBUG [Thread-1] c.y.m.p.SimpleMusicPlayer - next song: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:05:18.232  DEBUG [Thread-2] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:10:46.969  DEBUG [Thread-2] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:10:46.969  DEBUG [Thread-2] c.y.m.p.SimpleMusicPlayer - next song: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:10:46.970  DEBUG [Thread-3] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:10:52.222  DEBUG [Thread-3] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:10:52.223  DEBUG [Thread-3] c.y.m.p.SimpleMusicPlayer - next song: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 23:10:52.224  DEBUG [Thread-4] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:15:11.874  DEBUG [Thread-4] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:15:11.875  DEBUG [Thread-4] c.y.m.p.SimpleMusicPlayer - next song: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:15:11.876  DEBUG [Thread-5] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:18:53.078  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 23:18:54.172  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-null: null   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 23:18:54.173  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='null', artist='null', format='mp3'}
+2023-12-06 23:18:54.174  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 23:18:54.184  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 23:18:54.184  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:18:54.185  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 23:18:54.194  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 23:18:54.194  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:18:54.196  INFO  [main] c.y.m.p.SimpleMusicPlayer - play null: null
+2023-12-06 23:18:54.196  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:18:59.391  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:18:59.392  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ: “¯¡Ÿ
+2023-12-06 23:18:59.392  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:20:26.585  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 23:20:27.654  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 23:20:27.655  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-06 23:20:27.656  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 23:20:27.666  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 23:20:27.667  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:20:27.668  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 23:20:27.675  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 23:20:27.675  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:20:27.677  INFO  [main] c.y.m.p.SimpleMusicPlayer - play Unknown: Unknown
+2023-12-06 23:20:27.677  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:20:32.891  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:20:32.895  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:20:32.895  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ: “¯¡Ÿ
+2023-12-06 23:21:00.399  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-06 23:21:01.514  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@4386f16, player=com.yelanyanyu.music.Mp3PlayerDecorator@363ee3a2)
+2023-12-06 23:21:01.515  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-06 23:21:01.516  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-06 23:21:01.526  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1b1473ab, player=com.yelanyanyu.music.Mp3PlayerDecorator@2f7c2f4f)
+2023-12-06 23:21:01.527  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:21:01.527  DEBUG [main] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-06 23:21:01.536  DEBUG [main] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@ef9296d, player=com.yelanyanyu.music.Mp3PlayerDecorator@36c88a32)
+2023-12-06 23:21:01.536  INFO  [main] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-06 23:21:01.538  INFO  [main] c.y.m.p.SimpleMusicPlayer - play Unknown.mp3: Unknown
+2023-12-06 23:21:01.538  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-06 23:21:06.733  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-06 23:21:06.734  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-06 23:21:06.734  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...

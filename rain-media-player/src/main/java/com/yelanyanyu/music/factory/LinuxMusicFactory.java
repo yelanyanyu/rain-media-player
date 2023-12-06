@@ -1,6 +1,6 @@
 package com.yelanyanyu.music.factory;
 
-import com.yelanyanyu.music.music_file.Music;
+import com.yelanyanyu.music.music_file.AbstractMusic;
 
 /**
  * For now, Linux support are not feasible.
@@ -10,14 +10,14 @@ import com.yelanyanyu.music.music_file.Music;
  */
 public class LinuxMusicFactory implements MusicFactory {
     @Override
-    public Music createMp3Music(String filePath) {
+    public AbstractMusic createMp3Music(String filePath) {
         // wait
 
         return null;
     }
 
     @Override
-    public Music createFlacMusic(String filePath) {
+    public AbstractMusic createFlacMusic(String filePath) {
         // wait
 
 

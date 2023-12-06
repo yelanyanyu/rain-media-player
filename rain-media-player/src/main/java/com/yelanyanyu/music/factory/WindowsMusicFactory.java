@@ -4,9 +4,10 @@ import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
 import com.mpatric.mp3agic.UnsupportedTagException;
-import com.yelanyanyu.music.music_file.Music;
+import com.yelanyanyu.music.music_file.AbstractMusic;
+import com.yelanyanyu.music.music_file.impl.MusicStateContext;
 import com.yelanyanyu.music.music_file.impl.OriginMusicState;
-import com.yelanyanyu.music.music_file.impl.WindowsMp3Music;
+import com.yelanyanyu.music.music_file.impl.WindowsMp3AbstractMusic;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -18,7 +19,8 @@ import java.io.IOException;
 @Slf4j
 public class WindowsMusicFactory implements MusicFactory{
     @Override
-    public Music createMp3Music(String filePath) {
+    public AbstractMusic createMp3Music(String filePath) {
+        log.debug("create music: {}", filePath);
         Mp3File mp3File = null;
         try {
             mp3File = new Mp3File(filePath);
@@ -26,14 +28,20 @@ public class WindowsMusicFactory implements MusicFactory{
             throw new RuntimeException(e);
         }
 
-        WindowsMp3Music music = new WindowsMp3Music();
+        WindowsMp3AbstractMusic music = new WindowsMp3AbstractMusic();
         music.setFilePath(filePath);
         if (mp3File.hasId3v2Tag()) {
             ID3v2 id3v2Tag = mp3File.getId3v2Tag();
-            music.setArtist(id3v2Tag.getArtist());
-            music.setSongName(id3v2Tag.getTitle());
+            String artist = id3v2Tag.getArtist();
+            String title = id3v2Tag.getTitle();
+            if (artist != null) {
+                music.setArtist(id3v2Tag.getArtist());
+            }
+            if (title != null) {
+                music.setSongName(id3v2Tag.getTitle());
+            }
             music.setLengthOfSecond(mp3File.getLengthInSeconds());
-            music.setState(new OriginMusicState());
+            music.setState(new OriginMusicState(), new MusicStateContext(filePath));
         }
 
         log.debug("mp3song-{}: {}   {}, path: {}, state: {}", music.getArtist(), music.getSongName(),
@@ -42,7 +50,7 @@ public class WindowsMusicFactory implements MusicFactory{
     }
 
     @Override
-    public Music createFlacMusic(String filePath) {
+    public AbstractMusic createFlacMusic(String filePath) {
 
         return null;
     }

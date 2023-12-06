@@ -1,6 +1,6 @@
 package com.yelanyanyu.music.factory;
 
-import com.yelanyanyu.music.music_file.Music;
+import com.yelanyanyu.music.music_file.AbstractMusic;
 
 /**
  * @author yelanyanyu@zjxu.edu.cn
@@ -13,13 +13,13 @@ public interface MusicFactory {
      * @param filePath .
      * @return .
      */
-    Music createMp3Music(String filePath);
+    AbstractMusic createMp3Music(String filePath);
 
     /**
-     * Obtain flac Music by given filePath. Not support.
+     * Obtain flac Music by given filePath. Not support
      *
      * @param filePath .
      * @return .
      */
-    Music createFlacMusic(String filePath);
+    AbstractMusic createFlacMusic(String filePath);
 }

@@ -9,21 +9,22 @@ import com.yelanyanyu.music.music_file.AbstractMusicState;
 public class OriginMusicState extends AbstractMusicState {
     @Override
     public void play(MusicStateContext context) {
-
+        context.setState(new PlayingState());
+        context.getPlayer().play();
     }
 
     @Override
     public void pause(MusicStateContext context) {
-
+        return;
     }
 
     @Override
     public void stop(MusicStateContext context) {
-
+        return;
     }
 
     @Override
     public void nextSong(MusicStateContext context) {
-
+        return;
     }
 }

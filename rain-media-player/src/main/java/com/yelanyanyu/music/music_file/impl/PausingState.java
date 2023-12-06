@@ -10,21 +10,23 @@ public class PausingState extends AbstractMusicState {
 
     @Override
     public void play(MusicStateContext context) {
-
+        context.setState(new PlayingState());
+        context.getPlayer().play();
     }
 
     @Override
     public void pause(MusicStateContext context) {
-
+        play(context);
     }
 
     @Override
     public void stop(MusicStateContext context) {
-
+        context.setState(new OriginMusicState());
+        context.getPlayer().stop();
     }
 
     @Override
     public void nextSong(MusicStateContext context) {
-
+        return;
     }
 }

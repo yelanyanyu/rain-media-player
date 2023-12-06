@@ -1,9 +1,8 @@
 package com.yelanyanyu.music.music_file.impl;
 
+import com.yelanyanyu.music.Mp3PlayerDecorator;
 import com.yelanyanyu.music.music_file.AbstractMusicState;
-import javazoom.jl.player.Player;
 import lombok.Data;
-import lombok.Setter;
 
 /**
  * @author yelanyanyu@zjxu.edu.cn
@@ -12,10 +11,15 @@ import lombok.Setter;
 @Data
 public class MusicStateContext {
     private AbstractMusicState state;
-    private Player player;
+    private Mp3PlayerDecorator player;
 
     public MusicStateContext() {
         this.state = new OriginMusicState();
+    }
+
+    public MusicStateContext(String filePath) {
+        this();
+        this.player = new Mp3PlayerDecorator(filePath);
     }
 
     public void play() {
