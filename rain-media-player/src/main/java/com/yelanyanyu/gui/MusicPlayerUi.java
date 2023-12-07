@@ -21,6 +21,7 @@ import java.lang.reflect.InvocationTargetException;
  */
 @Slf4j
 public class MusicPlayerUi {
+    MusicPlayer musicPlayer = SimpleMusicPlayer.INSTANCE;
     /**
      * 主界面
      */
@@ -33,14 +34,13 @@ public class MusicPlayerUi {
      * 播放列表界面
      */
     private JFrame playlistFrame;
-    MusicPlayer musicPlayer = SimpleMusicPlayer.INSTANCE;
 
     public MusicPlayerUi() {
         initUi();
     }
 
     public MusicPlayerUi(String classPath) {
-        Class<?> clazz = null;
+        Class<?> clazz;
         try {
             clazz = Class.forName(classPath);
             this.musicPlayer = (MusicPlayer) clazz.getDeclaredConstructor().newInstance();
@@ -115,11 +115,8 @@ public class MusicPlayerUi {
             // TODO: 实现向前跳 5 秒的逻辑
         });
 
-        backButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                // TODO: 实现向后跳 5 秒的逻辑
-            }
+        backButton.addActionListener(e -> {
+            // TODO: 实现向后跳 5 秒的逻辑
         });
 
         returnButton.addActionListener(e -> {
@@ -146,17 +143,23 @@ public class MusicPlayerUi {
         playlistFrame.setLayout(new BorderLayout());
 
         // 表格模型
-        String[] columnNames = {"歌曲名", "演唱者", "播放", "删除"};
+        String[] columnNames = {"#", "歌曲名", "演唱者", "播放", "删除"};
         DefaultTableModel model = new DefaultTableModel(columnNames, 0) {
             @Override
             public boolean isCellEditable(int row, int column) {
-                return column >= 2; // 只有操作列可以编辑
+                return column >= 3; // 只有操作列可以编辑
+            }
+
+            @Override
+            public void addRow(Object[] rowData) {
+                rowData[0] = this.getRowCount() + 1; // 设置自增列的值
+                super.addRow(rowData);
             }
         };
 
         // 添加两行示例数据
-        model.addRow(new Object[]{"歌曲1", "演唱者A", "播放", "删除"});
-        model.addRow(new Object[]{"歌曲2", "演唱者B", "播放", "删除"});
+        model.addRow(new Object[]{null, "歌曲1", "演唱者A", "播放", "删除"});
+        model.addRow(new Object[]{null, "歌曲2", "演唱者B", "播放", "删除"});
 
         // 创建表格
         JTable table = new JTable(model);
@@ -173,13 +176,31 @@ public class MusicPlayerUi {
         Action deleteAction = new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO: 实现删除逻辑
-                JOptionPane.showMessageDialog(playlistFrame, "删除歌曲");
+                int row = table.convertRowIndexToModel(table.getEditingRow());
+                int response = JOptionPane.showConfirmDialog(
+                        playlistFrame,
+                        "确定要删除这首歌曲吗?",
+                        "确认删除",
+                        JOptionPane.YES_NO_OPTION,
+                        JOptionPane.QUESTION_MESSAGE
+                );
+
+                if (response == JOptionPane.YES_OPTION) {
+                    // 用户确认删除
+                    // TODO: 实现删除逻辑
+                    // 例如：model.removeRow(row);
+                    JOptionPane.showMessageDialog(playlistFrame, "歌曲已删除");
+                } else {
+                    // 用户取消删除，返回播放界面
+                    // 如果需要返回播放界面，执行相关逻辑
+                    // 例如：playlistFrame.setVisible(false);
+                    // playFrame.setVisible(true);
+                }
             }
         };
 
-        new ButtonColumn(table, playAction, 2);
-        new ButtonColumn(table, deleteAction, 3);
+        new ButtonColumn(table, playAction, 3);
+        new ButtonColumn(table, deleteAction, 4);
 
         // 将表格添加到滚动窗格中
         JScrollPane scrollPane = new JScrollPane(table);
@@ -198,7 +219,7 @@ public class MusicPlayerUi {
         playlistFrame.setVisible(true);
     }
 
-    class ButtonColumn extends AbstractCellEditor implements TableCellRenderer, TableCellEditor, ActionListener {
+    static class ButtonColumn extends AbstractCellEditor implements TableCellRenderer, TableCellEditor, ActionListener {
         JTable table;
         JButton renderButton;
         JButton editButton;
