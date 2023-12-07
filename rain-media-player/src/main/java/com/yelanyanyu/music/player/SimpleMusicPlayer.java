@@ -115,6 +115,11 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
         log.info("stop {}.{}: {}", getCurrentMusic().songName, getCurrentMusic().format, getCurrentMusic().artist);
     }
 
+    @Override
+    public void play(int index) {
+
+    }
+
     /**
      * 当音乐播放完毕的时候, 将当前歌曲放在队尾，然后指针下移, 准备播放下一首歌曲
      */

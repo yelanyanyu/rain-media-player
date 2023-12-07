@@ -6,4 +6,8 @@ package com.yelanyanyu.music.player;
  */
 public class EnhancedMusicPlayer implements SimpleMusicPlayerDecorator {
 
+    @Override
+    public void play(int index) {
+
+    }
 }

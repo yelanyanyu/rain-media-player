@@ -10,4 +10,10 @@ public interface MusicPlayer {
     void pause();
 
     void stop();
+
+    /**
+     * 从低index首歌曲开始播放
+     * @param index .
+     */
+    void play(int index);
 }

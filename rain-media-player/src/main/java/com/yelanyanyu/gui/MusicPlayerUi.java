@@ -137,6 +137,14 @@ public class MusicPlayerUi {
         playFrame.setVisible(true);
     }
 
+    private Object[] getRowData(DefaultTableModel model, int row) {
+        Object[] rowData = new Object[model.getColumnCount()];
+        for (int i = 0; i < model.getColumnCount(); i++) {
+            rowData[i] = model.getValueAt(row, i);
+        }
+        return rowData;
+    }
+
     private void showPlaylistFrame() {
         // 播放列表界面 JFrame
         playlistFrame = new JFrame("播放列表界面");
@@ -170,13 +178,19 @@ public class MusicPlayerUi {
             public void actionPerformed(ActionEvent e) {
                 // TODO: 实现播放逻辑
                 JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
+                int row = (int) getValue("row");
+                Object[] rowData = getRowData(model, row);
+                
             }
         };
 
         Action deleteAction = new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int row = table.convertRowIndexToModel(table.getEditingRow());
+                int row = (int) getValue("row");
+                // 获取该行的所有数据
+                Object[] rowData = getRowData(model, row);
+                log.debug("row1: {}", rowData[0]);
                 int response = JOptionPane.showConfirmDialog(
                         playlistFrame,
                         "确定要删除这首歌曲吗?",
@@ -272,7 +286,11 @@ public class MusicPlayerUi {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            fireEditingStopped();
+            fireEditingStopped(); // 停止编辑
+            // 从按钮获取行索引
+            int selectedRow = table.getSelectedRow();
+            // 将行索引作为属性传递给动作
+            action.putValue("row", selectedRow);
             action.actionPerformed(e);
         }
     }
