@@ -24,6 +24,10 @@ public abstract class AbstractMusic {
         this.state.setState(state);
     }
 
+    public AbstractMusicState getState() {
+        return this.state.getState();
+    }
+
     @Override
     public String toString() {
         return "AbstractMusic{" +

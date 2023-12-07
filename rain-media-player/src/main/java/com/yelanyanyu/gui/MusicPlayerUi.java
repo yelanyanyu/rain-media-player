@@ -1,5 +1,7 @@
 package com.yelanyanyu.gui;
 
+import com.yelanyanyu.music.music_file.AbstractMusic;
+import com.yelanyanyu.music.music_file.impl.PlayingState;
 import com.yelanyanyu.music.player.MusicPlayer;
 import com.yelanyanyu.music.player.SimpleMusicPlayer;
 import com.yelanyanyu.music.player.WindowsMp3MusicStrategy;
@@ -16,6 +18,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @author yelanyanyu
@@ -81,7 +85,7 @@ public class MusicPlayerUi {
                 // Use the folderPath as needed
                 log.info("Selected folder: {}", folderPath);
                 SimpleMusicPlayer simpleMusicPlayer = (SimpleMusicPlayer) musicPlayer;
-                // 这里写死. 以后再改
+                // TODO: 这里写死. 以后再改
                 simpleMusicPlayer.init(folderPath, new WindowsMp3MusicStrategy());
                 showPlayFrame();
             }
@@ -112,6 +116,13 @@ public class MusicPlayerUi {
         // 为按钮添加事件处理逻辑
         playButton.addActionListener(e -> {
             // TODO: 实现播放/暂停逻辑
+            AbstractMusic currentMusic = ((SimpleMusicPlayer) musicPlayer).getCurrentMusic();
+            if (currentMusic.getState().getClass() == PlayingState.class) {
+                musicPlayer.pause();
+            } else {
+                log.debug("play.{}:{}.with state: {}", currentMusic.songName, currentMusic.artist, currentMusic.getState());
+                musicPlayer.play();
+            }
         });
 
         forwardButton.addActionListener(e -> {
@@ -199,9 +210,13 @@ public class MusicPlayerUi {
             }
         };
 
-        // 添加两行示例数据
-        model.addRow(new Object[]{null, "歌曲1", "演唱者A", "播放", "删除"});
-        model.addRow(new Object[]{null, "歌曲2", "演唱者B", "播放", "删除"});
+        // TODO: 渲染playList的数据
+        // 1. 从player得到playList链表
+        LinkedList<AbstractMusic> playList = ((SimpleMusicPlayer) musicPlayer).getPlayList();
+        // 2. 一次将数据加入表格
+        playList.forEach(o -> {
+            model.addRow(new Object[]{null, o.songName, o.artist, "播放", "删除"});
+        });
 
         // 创建表格
         JTable table = new JTable(model);
@@ -210,15 +225,21 @@ public class MusicPlayerUi {
         Action playAction = new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO: 实现播放逻辑
+                // TODO: 实现播放逻辑 - wait for test
                 JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
                 int row = (int) getValue("row");
                 Object[] rowData = getRowData(model, row);
-                // 1. 若播放的歌曲就是第一个，则直接调用 player.play()
-
-                // 2. 若不是第一个，则需要调用player.play(index)
+                if (row == 1) {
+                    // 1. 若播放的歌曲就是第一个，则直接调用 player.play()
+                    musicPlayer.play();
+                } else if (row > 1) {
+                    // 2. 若不是第一个，则需要调用player.play(index)
+                    musicPlayer.play(row - 1);
+                }
 
                 // 3. 刷新playList
+                playlistFrame.setVisible(false);
+                showPlaylistFrame();
             }
         };
 

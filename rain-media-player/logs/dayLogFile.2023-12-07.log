@@ -55,3 +55,136 @@
 2023-12-07 10:45:42.916  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
 2023-12-07 10:47:48.932  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
 2023-12-07 10:47:52.266  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: C:\Users\lenovo\OneDrive\Œƒµµ\EasyShare
+2023-12-07 14:44:56.507  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 14:45:33.496  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 14:45:33.501  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 14:45:34.644  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@60bb2b04, player=com.yelanyanyu.music.Mp3PlayerDecorator@7643d9e9)
+2023-12-07 14:45:34.645  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 14:45:34.646  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 14:45:34.668  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@5d4d91c4, player=com.yelanyanyu.music.Mp3PlayerDecorator@1104fa6f)
+2023-12-07 14:45:34.669  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:45:34.669  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 14:45:34.683  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@1bda282e, player=com.yelanyanyu.music.Mp3PlayerDecorator@2aa84920)
+2023-12-07 14:45:34.684  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:46:17.091  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 14:46:36.545  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: C:\Users\lenovo\AppData\Roaming\Microsoft\Windows\Recent\ D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 14:46:56.063  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 14:46:56.066  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 14:46:56.989  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@31289ee3, player=com.yelanyanyu.music.Mp3PlayerDecorator@546cab65)
+2023-12-07 14:46:56.990  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 14:46:56.990  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 14:46:57.000  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@7c726dd7, player=com.yelanyanyu.music.Mp3PlayerDecorator@6093ffcc)
+2023-12-07 14:46:57.001  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:46:57.001  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 14:46:57.008  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: MusicStateContext(state=com.yelanyanyu.music.music_file.impl.OriginMusicState@317ec23, player=com.yelanyanyu.music.Mp3PlayerDecorator@6c643543)
+2023-12-07 14:46:57.008  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:52:07.097  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 14:52:12.322  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 14:52:12.326  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 14:52:13.457  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@11ad3f32
+2023-12-07 14:52:13.458  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 14:52:13.459  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 14:52:13.467  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@408e557
+2023-12-07 14:52:13.468  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:52:13.469  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 14:52:13.475  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@19ddaacd
+2023-12-07 14:52:13.475  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:52:15.947  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play Unknown.mp3: Unknown
+2023-12-07 14:52:15.948  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 14:52:21.184  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-07 14:52:21.185  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 14:52:21.185  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 14:54:55.522  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 14:54:59.169  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 14:54:59.173  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 14:55:00.073  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@3eae1450
+2023-12-07 14:55:00.074  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 14:55:00.074  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 14:55:00.083  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@5558b133
+2023-12-07 14:55:00.084  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:55:00.084  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 14:55:00.090  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@65d2efbc
+2023-12-07 14:55:00.091  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:55:03.565  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play...with state: com.yelanyanyu.music.music_file.impl.OriginMusicState@3eae1450
+2023-12-07 14:55:03.567  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play Unknown.mp3: Unknown
+2023-12-07 14:55:03.567  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 14:55:08.783  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-07 14:55:08.784  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 14:55:08.785  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 14:55:15.639  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play...with state: com.yelanyanyu.music.music_file.impl.OriginMusicState@5558b133
+2023-12-07 14:58:36.085  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 14:58:40.714  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resourcesŒƒµµ
+2023-12-07 14:58:49.863  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 14:58:49.865  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 14:58:50.836  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@311a61e1
+2023-12-07 14:58:50.837  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 14:58:50.837  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 14:58:50.846  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@6727c9d3
+2023-12-07 14:58:50.847  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:58:50.847  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 14:58:50.854  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@4e11fa44
+2023-12-07 14:58:50.854  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 14:58:57.942  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.Unknown:Unknown.with state: com.yelanyanyu.music.music_file.impl.OriginMusicState@311a61e1
+2023-12-07 14:58:57.944  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play Unknown.mp3: Unknown
+2023-12-07 14:58:57.944  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 14:59:03.441  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-07 14:59:03.442  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 14:59:03.442  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 14:59:27.627  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.OriginMusicState@6727c9d3
+2023-12-07 15:01:48.349  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 15:01:55.748  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 15:01:55.753  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 15:01:56.662  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@15db204c
+2023-12-07 15:01:56.662  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 15:01:56.663  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 15:01:56.673  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@69b923ab
+2023-12-07 15:01:56.674  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 15:01:56.675  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 15:01:56.682  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@2d48327b
+2023-12-07 15:01:56.682  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 15:01:58.429  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.Unknown:Unknown.with state: com.yelanyanyu.music.music_file.impl.OriginMusicState@15db204c
+2023-12-07 15:01:58.431  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play Unknown.mp3: Unknown
+2023-12-07 15:01:58.431  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 15:02:03.649  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-07 15:04:02.796  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 15:04:10.251  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:13:30.361  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.OriginMusicState@69b923ab
+2023-12-07 15:13:33.385  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 15:13:40.820  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 15:13:40.825  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 15:13:41.681  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@5fcdc269
+2023-12-07 15:13:41.682  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 15:13:41.683  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 15:13:41.691  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ≥Ÿ≥Ÿ   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@3eae1450
+2023-12-07 15:13:41.692  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='≥Ÿ≥Ÿ', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 15:13:41.692  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 15:13:41.698  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-“¯¡Ÿ: ∞◊‘Î“Ù   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@750a09be
+2023-12-07 15:13:41.699  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='∞◊‘Î“Ù', artist='“¯¡Ÿ', format='mp3'}
+2023-12-07 15:13:43.009  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.Unknown:Unknown.with state: com.yelanyanyu.music.music_file.impl.OriginMusicState@5fcdc269
+2023-12-07 15:13:43.010  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play Unknown.mp3: Unknown
+2023-12-07 15:13:43.011  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 15:13:48.202  DEBUG [Thread-0] c.y.m.Mp3PlayerDecorator - listeners size: 1
+2023-12-07 15:13:48.203  INFO  [Thread-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:13:48.203  DEBUG [Thread-1] c.y.m.Mp3PlayerDecorator - thread run...
+2023-12-07 15:13:52.001  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:13:57.174  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.PausingState@7c2d5d5c
+2023-12-07 15:13:57.175  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:13:58.414  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:13:59.457  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.PausingState@7e6f30ee
+2023-12-07 15:13:59.457  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:00.424  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:01.324  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.PausingState@bab4fe5
+2023-12-07 15:14:01.325  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:02.082  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:03.267  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.PausingState@6f743a6
+2023-12-07 15:14:03.267  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:04.144  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:05.022  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.PausingState@3e816ab5
+2023-12-07 15:14:05.023  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:10.891  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:29.878  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.PausingState@7b954fd4
+2023-12-07 15:14:29.878  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:31.371  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:32.518  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - play.≥Ÿ≥Ÿ:“¯¡Ÿ.with state: com.yelanyanyu.music.music_file.impl.PausingState@298d2272
+2023-12-07 15:14:32.519  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
+2023-12-07 15:14:33.786  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - pause ≥Ÿ≥Ÿ.mp3: “¯¡Ÿ
