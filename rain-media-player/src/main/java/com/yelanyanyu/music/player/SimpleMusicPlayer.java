@@ -85,7 +85,6 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
     private MusicStateContext currentContext() {
         AbstractMusic first = playList.getFirst();
         if (this.context == null) {
-//            this.context = new MusicStateContext(first.filePath);
             this.context = first.state;
         }
         return this.context;
