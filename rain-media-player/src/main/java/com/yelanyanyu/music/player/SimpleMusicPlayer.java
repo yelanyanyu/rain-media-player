@@ -1,5 +1,6 @@
 package com.yelanyanyu.music.player;
 
+import com.yelanyanyu.gui.MusicPlayerUi;
 import com.yelanyanyu.music.factory.MusicFactory;
 import com.yelanyanyu.music.factory.WindowsMusicFactory;
 import com.yelanyanyu.music.listener.PlaybackCompleteListener;
@@ -40,14 +41,15 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
     private int stepLength;
 
     public static void main(String[] args) throws InterruptedException {
-        SimpleMusicPlayer instance = SimpleMusicPlayer.INSTANCE;
-        instance.init("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources", new WindowsMp3MusicStrategy());
-        instance.play();
+//        SimpleMusicPlayer instance = SimpleMusicPlayer.INSTANCE;
+//        instance.init("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources", new WindowsMp3MusicStrategy());
+//        instance.play();
     }
 
-    public void init(final String folderPath, final MusicStrategy musicStrategy) {
+    public void init(final String folderPath, final MusicStrategy musicStrategy, MusicPlayerUi ui) {
         this.playList = new LinkedList<>();
         this.musicStrategy = musicStrategy;
+        ((WindowsMusicFactory) musicFactory).setUi(ui);
         try {
             Files.walk(Paths.get(folderPath))
                     .filter(Files::isRegularFile)
@@ -78,8 +80,10 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
         }
     }
 
-    public void deleteFromPlayList(Path path) {
+
+    public void deleteFromPlayList(int index) {
         // TODO: 从队列中指定删除歌曲
+        this.playList.remove(index);
     }
 
     private MusicStateContext currentContext() {
@@ -117,7 +121,22 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
 
     @Override
     public void play(int index) {
+        // TODO: 将所有index之前的索引全部放到尾部, 然后调用play
+        stop();
+        for (int i = 0; i < index; i++) {
+            next();
+        }
+        // 如果当前有正在播放的音乐，就将其停止
+        play();
+    }
 
+    /**
+     * 将下一首歌曲放置到队首，当前歌曲移动到队尾，为播放下一首歌曲做准备
+     */
+    private void next() {
+        AbstractMusic first = playList.pollFirst();
+        playList.addLast(first);
+        this.context = null;
     }
 
     /**
@@ -125,9 +144,7 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
      */
     @Override
     public void playbackCompleted() {
-        AbstractMusic first = playList.pollFirst();
-        playList.addLast(first);
-        this.context = null;
+        next();
         play();
     }
 }

@@ -10,6 +10,7 @@ import javax.swing.*;
  */
 public class App {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(MusicPlayerUi::new);
+        MusicPlayerUi ui = new MusicPlayerUi();
+//        SwingUtilities.invokeLater(ui);
     }
 }

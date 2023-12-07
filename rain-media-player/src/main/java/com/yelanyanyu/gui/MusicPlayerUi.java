@@ -1,5 +1,6 @@
 package com.yelanyanyu.gui;
 
+import com.yelanyanyu.music.listener.PlaybackCompleteListener;
 import com.yelanyanyu.music.music_file.AbstractMusic;
 import com.yelanyanyu.music.music_file.impl.PlayingState;
 import com.yelanyanyu.music.player.MusicPlayer;
@@ -25,8 +26,9 @@ import java.util.List;
  * @author yelanyanyu
  */
 @Slf4j
-public class MusicPlayerUi {
+public class MusicPlayerUi implements PlaybackCompleteListener {
     MusicPlayer musicPlayer = SimpleMusicPlayer.INSTANCE;
+    private AbstractMusic currentMusic;
     /**
      * 主界面
      */
@@ -68,6 +70,9 @@ public class MusicPlayerUi {
         }
     }
 
+    private AbstractMusic getCurrentMusic() {
+        return ((SimpleMusicPlayer) this.musicPlayer).getCurrentMusic();
+    }
 
     private void initUi() {
         log.info("MusicPlayerUi init...");
@@ -85,14 +90,27 @@ public class MusicPlayerUi {
                 // Use the folderPath as needed
                 log.info("Selected folder: {}", folderPath);
                 SimpleMusicPlayer simpleMusicPlayer = (SimpleMusicPlayer) musicPlayer;
-                // TODO: 这里写死. 以后再改
-                simpleMusicPlayer.init(folderPath, new WindowsMp3MusicStrategy());
+                // TODO: 这里将new WindowsMp3MusicStrategy()写死. 以后再改
+                simpleMusicPlayer.init(folderPath, new WindowsMp3MusicStrategy(), this);
+                this.currentMusic = getCurrentMusic();
                 showPlayFrame();
             }
         });
 
+
+
+        JButton goToPlayButton = new JButton("进入播放界面");
+        goToPlayButton.addActionListener(e -> {
+            if (this.playFrame != null) {
+                this.playFrame.setVisible(true);
+                return;
+            }
+            JOptionPane.showMessageDialog(mainFrame, "当前没有正在播放的列表, 请选择");
+        });
+
         mainFrame.setLayout(new FlowLayout());
         mainFrame.add(selectMusicButton);
+        mainFrame.add(goToPlayButton);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         mainFrame.setSize(400, 200);
         mainFrame.setVisible(true);
@@ -115,7 +133,6 @@ public class MusicPlayerUi {
 
         // 为按钮添加事件处理逻辑
         playButton.addActionListener(e -> {
-            // TODO: 实现播放/暂停逻辑
             AbstractMusic currentMusic = ((SimpleMusicPlayer) musicPlayer).getCurrentMusic();
             if (currentMusic.getState().getClass() == PlayingState.class) {
                 musicPlayer.pause();
@@ -147,8 +164,14 @@ public class MusicPlayerUi {
 
         // 创建中间信息面板
         JPanel infoPanel = new JPanel(new GridLayout(2, 1, 5, 1)); // 使用 GridLayout 来放置两个信息标签
-        infoPanel.add(new JLabel("歌曲名"));
-        infoPanel.add(new JLabel("演唱者"));
+
+        String artist = null, songName = null;
+        AbstractMusic currentMusic = getCurrentMusic();
+        artist = currentMusic.artist;
+        songName = currentMusic.songName;
+
+        infoPanel.add(new JLabel("歌曲名: " + artist));
+        infoPanel.add(new JLabel("演唱者: " + songName));
 
         // 创建底部按钮面板
         JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
@@ -210,7 +233,6 @@ public class MusicPlayerUi {
             }
         };
 
-        // TODO: 渲染playList的数据
         // 1. 从player得到playList链表
         LinkedList<AbstractMusic> playList = ((SimpleMusicPlayer) musicPlayer).getPlayList();
         // 2. 一次将数据加入表格
@@ -229,17 +251,10 @@ public class MusicPlayerUi {
                 JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
                 int row = (int) getValue("row");
                 Object[] rowData = getRowData(model, row);
-                if (row == 1) {
-                    // 1. 若播放的歌曲就是第一个，则直接调用 player.play()
-                    musicPlayer.play();
-                } else if (row > 1) {
-                    // 2. 若不是第一个，则需要调用player.play(index)
-                    musicPlayer.play(row - 1);
-                }
+                musicPlayer.play(row);
 
                 // 3. 刷新playList
-                playlistFrame.setVisible(false);
-                showPlaylistFrame();
+                playbackCompleted();
             }
         };
 
@@ -294,6 +309,17 @@ public class MusicPlayerUi {
 
         playlistFrame.setSize(400, 300);
         playlistFrame.setVisible(true);
+    }
+
+    @Override
+    public void playbackCompleted() {
+        this.playFrame.setVisible(false);
+        flushCurrentMusic();
+        showPlayFrame();
+    }
+
+    private void flushCurrentMusic() {
+        this.currentMusic = getCurrentMusic();
     }
 
     static class ButtonColumn extends AbstractCellEditor implements TableCellRenderer, TableCellEditor, ActionListener {

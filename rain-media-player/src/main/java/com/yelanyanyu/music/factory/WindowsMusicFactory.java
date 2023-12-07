@@ -4,10 +4,12 @@ import com.mpatric.mp3agic.ID3v2;
 import com.mpatric.mp3agic.InvalidDataException;
 import com.mpatric.mp3agic.Mp3File;
 import com.mpatric.mp3agic.UnsupportedTagException;
+import com.yelanyanyu.gui.MusicPlayerUi;
 import com.yelanyanyu.music.music_file.AbstractMusic;
 import com.yelanyanyu.music.music_file.impl.MusicStateContext;
 import com.yelanyanyu.music.music_file.impl.OriginMusicState;
 import com.yelanyanyu.music.music_file.impl.WindowsMp3AbstractMusic;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
@@ -17,7 +19,9 @@ import java.io.IOException;
  * @version 1.0
  */
 @Slf4j
+@Data
 public class WindowsMusicFactory implements MusicFactory{
+    private MusicPlayerUi ui;
     @Override
     public AbstractMusic createMp3Music(String filePath) {
         log.debug("create music: {}", filePath);
@@ -41,7 +45,11 @@ public class WindowsMusicFactory implements MusicFactory{
                 music.setSongName(id3v2Tag.getTitle());
             }
             music.setLengthOfSecond(mp3File.getLengthInSeconds());
-            music.setState(new OriginMusicState(), new MusicStateContext(filePath));
+            // 注册监听器
+            MusicStateContext context = new MusicStateContext(filePath);
+            context.getPlayer().addPlaybackCompleteListener(this.ui);
+
+            music.setState(new OriginMusicState(), context);
         }
 
         log.debug("mp3song-{}: {}   {}, path: {}, state: {}", music.getArtist(), music.getSongName(),
