@@ -1,7 +1,6 @@
 package com.yelanyanyu.music.music_file.impl;
 
 import com.yelanyanyu.music.music_file.AbstractMusicState;
-import javazoom.jl.decoder.JavaLayerException;
 
 /**
  * @author yelanyanyu@zjxu.edu.cn
@@ -24,7 +23,7 @@ public class PlayingState extends AbstractMusicState {
     @Override
     public void stop(MusicStateContext context) {
         context.setState(new OriginMusicState());
-        context.getPlayer().stop();
+        context.getPlayer().resetAndStop();
     }
 
     @Override

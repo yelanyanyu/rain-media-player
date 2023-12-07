@@ -6,7 +6,6 @@ import com.yelanyanyu.music.factory.WindowsMusicFactory;
 import com.yelanyanyu.music.listener.PlaybackCompleteListener;
 import com.yelanyanyu.music.music_file.AbstractMusic;
 import com.yelanyanyu.music.music_file.impl.MusicStateContext;
-import com.yelanyanyu.music.music_file.impl.OriginMusicState;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
@@ -114,15 +113,14 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
     }
 
     @Override
-    public void stop() {
+    public void resetAndStop() {
         musicStrategy.stop(currentContext());
         log.info("stop {}.{}: {}", getCurrentMusic().songName, getCurrentMusic().format, getCurrentMusic().artist);
     }
 
     @Override
     public void play(int index) {
-        // TODO: 将所有index之前的索引全部放到尾部, 然后调用play
-        stop();
+        resetAndStop();
         for (int i = 0; i < index; i++) {
             next();
         }

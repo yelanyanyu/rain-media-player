@@ -20,7 +20,7 @@ public interface SimpleMusicPlayerDecorator extends MusicPlayer{
     }
 
     @Override
-    default void stop() {
+    default void resetAndStop() {
         // do something
     }
 }

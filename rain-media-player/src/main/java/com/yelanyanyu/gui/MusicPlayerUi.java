@@ -236,9 +236,11 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
         // 1. 从player得到playList链表
         LinkedList<AbstractMusic> playList = ((SimpleMusicPlayer) musicPlayer).getPlayList();
         // 2. 一次将数据加入表格
-        playList.forEach(o -> {
-            model.addRow(new Object[]{null, o.songName, o.artist, "播放", "删除"});
-        });
+        if (!playList.isEmpty()) {
+            playList.forEach(o -> {
+                model.addRow(new Object[]{null, o.songName, o.artist, "播放", "删除"});
+            });
+        }
 
         // 创建表格
         JTable table = new JTable(model);
@@ -247,13 +249,13 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
         Action playAction = new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO: 实现播放逻辑 - wait for test
                 JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
                 int row = (int) getValue("row");
                 Object[] rowData = getRowData(model, row);
                 musicPlayer.play(row);
 
                 // 3. 刷新playList
+                playlistFrame.setVisible(false);
                 playbackCompleted();
             }
         };
@@ -274,12 +276,15 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
                 );
 
                 if (response == JOptionPane.YES_OPTION) {
-                    // 用户确认删除
-                    // TODO: 实现删除逻辑
-                    // 例如：model.removeRow(row);
-                    // 1. player中对应的歌曲删除
-
-                    // 2. 重新刷新playList
+                    /*
+                     用户确认删除
+                     TODO: 实现删除逻辑
+                     例如：model.removeRow(row);
+                     1. player中对应的歌曲删除
+                        1. 检查当前歌曲是否正在播放，如果正在播放，则停止，并且删除；
+                        2. 如果不在播放则直接删除；
+                     2. 重新刷新playList
+                    */
 
                     JOptionPane.showMessageDialog(playlistFrame, "歌曲已删除");
                 } else {

@@ -9,8 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.*;
 
 /**
  * @author yelanyanyu
@@ -21,15 +21,21 @@ public class Mp3PlayerDecorator {
     private final static int PLAYING = 1;
     private final static int PAUSED = 2;
     private final static int FINISHED = 3;
-    /**
-     * the player actually doing all the work
-     */
-    private final Player player;
+    private static final ExecutorService THREAD_POOL = new ThreadPoolExecutor(2, 5,
+            1L, TimeUnit.SECONDS,
+            new LinkedBlockingQueue<>(3),
+            Executors.defaultThreadFactory(),
+            new ThreadPoolExecutor.AbortPolicy());
     /**
      * locking object used to communicate with player thread
      */
     private final Object playerLock = new Object();
     private final List<PlaybackCompleteListener> listeners = new ArrayList<>(List.of(SimpleMusicPlayer.INSTANCE));
+    /**
+     * the player actually doing all the work
+     */
+    private Player player;
+    private String filePath;
     private FileInputStream fis;
     /**
      * status variable what player thread is doing/supposed to do
@@ -48,6 +54,7 @@ public class Mp3PlayerDecorator {
         try {
             this.fis = new FileInputStream(filePath);
             this.player = new Player(this.fis);
+            this.filePath = filePath;
         } catch (FileNotFoundException | JavaLayerException e) {
             throw new RuntimeException(e);
         }
@@ -79,10 +86,15 @@ public class Mp3PlayerDecorator {
      * 通知观察者播放完成
      */
     private void notifyPlaybackComplete() {
-        log.debug("listeners size: {}", listeners.size());
-        for (PlaybackCompleteListener listener : listeners) {
-            listener.playbackCompleted();
+        synchronized (playerLock) {
+            for (PlaybackCompleteListener listener : listeners) {
+                listener.playbackCompleted();
+            }
         }
+    }
+
+    private void notifyUi() {
+        listeners.get(1).playbackCompleted();
     }
 
     public boolean isCompleted() {
@@ -92,26 +104,65 @@ public class Mp3PlayerDecorator {
     /**
      * Starts playback (resumes if paused)
      */
+//    public void play() {
+//        synchronized (playerLock) {
+//            switch (playerStatus) {
+//                case ORIGIN -> {
+//                    final Runnable r = () -> {
+//                        log.debug("thread run...");
+//                        playInternal();
+//                    };
+//                    playerStatus = PLAYING;
+//                    THREAD_POOL.execute(r);
+//                }
+//                case PAUSED -> resume();
+//                case FINISHED -> {
+//                    resetPlayer();
+//                    this.playerStatus = ORIGIN;
+//                    notifyUi();
+//                    play();
+//                }
+//                // 默认情况可以省略，因为没有执行任何操作
+//                default -> {
+//                    notifyUi();
+//                }
+//            }
+//
+//        }
+//    }
     public void play() {
         synchronized (playerLock) {
-
-            switch (playerStatus) {
-                case ORIGIN -> {
-                    final Runnable r = () -> {
-                        log.debug("thread run...");
-                        playInternal();
-                    };
-                    final Thread t = new Thread(r);
-                    // t.setDaemon(true);
-                    t.setPriority(Thread.MAX_PRIORITY);
-                    playerStatus = PLAYING;
-                    t.start();
-                }
-                case PAUSED -> resume();
-                // 默认情况可以省略，因为没有执行任何操作
-                default -> throw new IllegalStateException("Unexpected value: " + playerStatus);
+            if (playerStatus == PLAYING) {
+                // 如果已经在播放，则不做任何操作
+                notifyUi();
+                return;
             }
+            if (playerStatus == FINISHED) {
+                resetPlayer();
+                this.playerStatus = ORIGIN;
+                notifyUi();
+            }
+            if (playerStatus == ORIGIN || playerStatus == PAUSED) {
+                startPlaybackThread();
+            }
+            // 其他状态不启动新的播放线程
+        }
+    }
 
+    private void startPlaybackThread() {
+        if (playerStatus != PLAYING) {
+            playerStatus = PLAYING;
+            THREAD_POOL.execute(this::playInternal);
+        }
+    }
+
+    private void resetPlayer() {
+        try {
+            close();
+            this.fis = new FileInputStream(this.filePath);
+            this.player = new Player(this.fis);
+        } catch (FileNotFoundException | JavaLayerException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -145,9 +196,10 @@ public class Mp3PlayerDecorator {
     /**
      * Stops playback. If not playing, does nothing
      */
-    public void stop() {
+    public void resetAndStop() {
         synchronized (playerLock) {
             playerStatus = FINISHED;
+            resetPlayer();
             playerLock.notifyAll();
         }
     }
@@ -161,7 +213,7 @@ public class Mp3PlayerDecorator {
                 }
             } catch (final JavaLayerException e) {
                 notifyPlaybackComplete();
-                break;
+                e.printStackTrace();
             }
             // check if paused or terminated
             synchronized (playerLock) {

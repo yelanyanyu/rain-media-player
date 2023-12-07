@@ -9,7 +9,7 @@ public interface MusicPlayer {
 
     void pause();
 
-    void stop();
+    void resetAndStop();
 
     /**
      * 从低index首歌曲开始播放
