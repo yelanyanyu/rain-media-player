@@ -19,6 +19,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
+import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -222,6 +223,106 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
         playlistFrame.setLayout(new BorderLayout());
 
         // 表格模型
+        DefaultTableModel model = getDefaultTableModel();
+
+        // 创建表格
+        JTable table = new JTable(model);
+
+        // 设置操作列的渲染器和编辑器
+        Action playAction = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
+                int row = (int) getValue("row");
+                musicPlayer.play(row);
+
+                // 3. 刷新playList
+                playlistFrame.setVisible(false);
+                playbackCompleted();
+            }
+        };
+
+        Action deleteAction = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int row = (int) getValue("row");
+                // 获取该行的所有数据
+                Object[] rowData = getRowData(model, row);
+                int response = JOptionPane.showConfirmDialog(
+                        playlistFrame,
+                        "确定要删除这首歌曲吗?",
+                        "确认删除",
+                        JOptionPane.YES_NO_OPTION,
+                        JOptionPane.QUESTION_MESSAGE
+                );
+
+                if (response == JOptionPane.YES_OPTION) {
+                    /*
+                     用户确认删除
+                     1. player中对应的歌曲删除
+                        1. 检查当前歌曲是否正在播放，如果正在播放，则停止，并且删除；
+                        2. 如果不在播放则直接删除；
+                     2. 重新刷新playList
+                    */
+                    ((SimpleMusicPlayer) musicPlayer).deleteFromPlayList(row);
+
+                    JOptionPane.showMessageDialog(playlistFrame, "歌曲已删除");
+                    flushPlayListFrame();
+                }
+            }
+        };
+
+        new ButtonColumn(table, playAction, 3);
+        new ButtonColumn(table, deleteAction, 4);
+
+        // 将表格添加到滚动窗格中
+        JScrollPane scrollPane = new JScrollPane(table);
+        playlistFrame.add(scrollPane, BorderLayout.CENTER);
+
+        JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+
+
+        // 返回按钮
+        JButton returnToPlayFrameButton = new JButton("返回");
+        returnToPlayFrameButton.addActionListener(e -> {
+            playlistFrame.setVisible(false);
+            playFrame.setVisible(true);
+        });
+
+        JButton addSongButton = new JButton("添加歌曲");
+        // addSongButton 的行为将由另外的代码定义
+        addSongButton.addActionListener(e -> {
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+            fileChooser.setMultiSelectionEnabled(true);
+            int result = fileChooser.showOpenDialog(playlistFrame);
+            if (result == JFileChooser.APPROVE_OPTION) {
+                for (File file : fileChooser.getSelectedFiles()) {
+                    String absolutePath = file.getAbsolutePath();
+                    // 这里处理选中的文件，例如添加到播放列表
+                    ((SimpleMusicPlayer) this.musicPlayer).addToPlayList(Paths.get(absolutePath));
+                }
+            }
+            flushPlayListFrame();
+        });
+        // 将按钮添加到面板
+        topPanel.add(returnToPlayFrameButton);
+        topPanel.add(addSongButton);
+
+        playlistFrame.add(topPanel, BorderLayout.SOUTH);
+
+        playlistFrame.setSize(400, 300);
+        playlistFrame.setVisible(true);
+    }
+
+    private void flushPlayListFrame() {
+        flushCurrentMusic();
+        playlistFrame.setVisible(false);
+        playbackCompleted();
+        showPlaylistFrame();
+    }
+
+    private DefaultTableModel getDefaultTableModel() {
         String[] columnNames = {"#", "歌曲名", "演唱者", "播放", "删除"};
         DefaultTableModel model = new DefaultTableModel(columnNames, 0) {
             @Override
@@ -240,87 +341,9 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
         LinkedList<AbstractMusic> playList = ((SimpleMusicPlayer) musicPlayer).getPlayList();
         // 2. 一次将数据加入表格
         if (!playList.isEmpty()) {
-            playList.forEach(o -> {
-                model.addRow(new Object[]{null, o.songName, o.artist, "播放", "删除"});
-            });
+            playList.forEach(o -> model.addRow(new Object[]{null, o.songName, o.artist, "播放", "删除"}));
         }
-
-        // 创建表格
-        JTable table = new JTable(model);
-
-        // 设置操作列的渲染器和编辑器
-        Action playAction = new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
-                int row = (int) getValue("row");
-                Object[] rowData = getRowData(model, row);
-                musicPlayer.play(row);
-
-                // 3. 刷新playList
-                playlistFrame.setVisible(false);
-                playbackCompleted();
-            }
-        };
-
-        Action deleteAction = new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int row = (int) getValue("row");
-                // 获取该行的所有数据
-                Object[] rowData = getRowData(model, row);
-                log.debug("row1: {}", rowData[0]);
-                int response = JOptionPane.showConfirmDialog(
-                        playlistFrame,
-                        "确定要删除这首歌曲吗?",
-                        "确认删除",
-                        JOptionPane.YES_NO_OPTION,
-                        JOptionPane.QUESTION_MESSAGE
-                );
-
-                if (response == JOptionPane.YES_OPTION) {
-                    /*
-                     用户确认删除
-                     TODO: 实现删除逻辑
-                     例如：model.removeRow(row);
-                     1. player中对应的歌曲删除
-                        1. 检查当前歌曲是否正在播放，如果正在播放，则停止，并且删除；
-                        2. 如果不在播放则直接删除；
-                     2. 重新刷新playList
-                    */
-                    ((SimpleMusicPlayer) musicPlayer).deleteFromPlayList(row);
-
-                    JOptionPane.showMessageDialog(playlistFrame, "歌曲已删除");
-                    flushCurrentMusic();
-                    playbackCompleted();
-                    showPlaylistFrame();
-                } else {
-                    // 用户取消删除，返回播放界面
-                    // 如果需要返回播放界面，执行相关逻辑
-                    // 例如：playlistFrame.setVisible(false);
-                    // playFrame.setVisible(true);
-                }
-            }
-        };
-
-        new ButtonColumn(table, playAction, 3);
-        new ButtonColumn(table, deleteAction, 4);
-
-        // 将表格添加到滚动窗格中
-        JScrollPane scrollPane = new JScrollPane(table);
-        playlistFrame.add(scrollPane, BorderLayout.CENTER);
-
-        // 返回按钮
-        JButton returnToPlayFrameButton = new JButton("返回");
-        returnToPlayFrameButton.addActionListener(e -> {
-            playlistFrame.setVisible(false);
-            playFrame.setVisible(true);
-        });
-
-        playlistFrame.add(returnToPlayFrameButton, BorderLayout.SOUTH);
-
-        playlistFrame.setSize(400, 300);
-        playlistFrame.setVisible(true);
+        return model;
     }
 
     @Override

@@ -81,21 +81,20 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
         }
     }
 
-
+    /**
+     * 1. 检查当前选中歌曲状态是否为播放中(只有index == 0 的歌曲才有可能播放);
+     * 1. 如果在播放中，就先stopAndReset, 然后从队列中删除;
+     * 2. 如果不在播放中, 就直接删除;
+     * 2. 第一首歌曲有两种可能的状态-> 初始状态，播放状态;
+     * 1. 对于初始状态，直接删除；
+     * 2. 对于播放状态则stop再删除, 然后播放下一首歌曲;
+     * 3. 或者说：
+     * 1. 对于状态为播放中或者暂停中的音乐就先stop再删除，再播放下一首；
+     * 2. 对于其他状态的音乐就直接删除
+     *
+     * @param index .
+     */
     public void deleteFromPlayList(int index) {
-        /*
-         TODO: 从队列中指定删除歌曲
-         1. 检查当前选中歌曲状态是否为播放中(只有index == 0 的歌曲才有可能播放);
-            1. 如果在播放中，就先stopAndReset, 然后从队列中删除;
-            2. 如果不在播放中, 就直接删除;
-         2. 第一首歌曲有两种可能的状态-> 初始状态，播放状态;
-            1. 对于初始状态，直接删除；
-            2. 对于播放状态则stop再删除, 然后播放下一首歌曲;
-         3. 或者说：
-            1. 对于状态为播放中或者暂停中的音乐就先stop再删除，再播放下一首；
-            2. 对于其他状态的音乐就直接删除
-        */
-
         AbstractMusic cur = getCurrentMusic();
         if (cur == null) {
             return;
@@ -114,7 +113,11 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
     }
 
     private MusicStateContext currentContext() {
-        this.context = getCurrentMusic().state;
+        AbstractMusic cur = getCurrentMusic();
+        if (cur == null) {
+            return null;
+        }
+        this.context = cur.state;
         return this.context;
     }
 

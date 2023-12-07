@@ -3088,3 +3088,76 @@
 2023-12-07 22:01:30.095  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
 2023-12-07 22:01:30.673  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.PlayingState@6c898a55
 2023-12-07 22:01:30.739  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - stop 夜国.mp3: 银临
+2023-12-07 22:05:49.391  INFO  [main] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 22:05:54.843  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 22:05:54.847  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 22:05:55.787  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@5c1d9e94
+2023-12-07 22:05:55.787  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 22:05:55.788  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 22:05:55.797  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 迟迟   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@685a7318
+2023-12-07 22:05:55.797  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='迟迟', artist='银临', format='mp3'}
+2023-12-07 22:05:55.798  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 22:05:55.804  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 白噪音   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@48e765c4
+2023-12-07 22:05:55.804  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='白噪音', artist='银临', format='mp3'}
+2023-12-07 22:05:55.805  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 夜国.mp3
+2023-12-07 22:05:55.809  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 夜国   244, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 夜国.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@697de2e4
+2023-12-07 22:05:55.810  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='夜国', artist='银临', format='mp3'}
+2023-12-07 22:05:55.810  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 沧海飞尘.mp3
+2023-12-07 22:05:55.814  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 沧海飞尘   225, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 沧海飞尘.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@44349f65
+2023-12-07 22:05:55.814  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='沧海飞尘', artist='银临', format='mp3'}
+2023-12-07 22:05:57.076  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:05:57.670  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@5c1d9e94
+2023-12-07 22:06:03.481  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:06:04.014  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@685a7318
+2023-12-07 22:06:05.704  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:06:06.256  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@48e765c4
+2023-12-07 22:06:07.681  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:06:08.237  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@697de2e4
+2023-12-07 22:06:09.535  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:06:10.014  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@44349f65
+2023-12-07 22:40:30.611  INFO  [main] c.y.g.MusicPlayerUi - MusicPlayerUi init...
+2023-12-07 22:40:41.444  INFO  [AWT-EventQueue-0] c.y.g.MusicPlayerUi - Selected folder: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources
+2023-12-07 22:40:41.449  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3
+2023-12-07 22:40:42.557  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-Unknown: Unknown   5, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\1.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@683a564
+2023-12-07 22:40:42.557  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='Unknown', artist='Unknown', format='mp3'}
+2023-12-07 22:40:42.558  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3
+2023-12-07 22:40:42.567  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 迟迟   258, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\3.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@1839ac1d
+2023-12-07 22:40:42.568  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='迟迟', artist='银临', format='mp3'}
+2023-12-07 22:40:42.568  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3
+2023-12-07 22:40:42.575  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 白噪音   328, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\4.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@124b14cc
+2023-12-07 22:40:42.575  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='白噪音', artist='银临', format='mp3'}
+2023-12-07 22:40:42.576  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 夜国.mp3
+2023-12-07 22:40:42.581  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 夜国   244, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 夜国.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@24c9836b
+2023-12-07 22:40:42.581  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='夜国', artist='银临', format='mp3'}
+2023-12-07 22:40:42.581  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 沧海飞尘.mp3
+2023-12-07 22:40:42.584  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 沧海飞尘   225, path: D:\myCode\formal-projects\simple-media-player\rain-media-player\src\test\resources\银临 - 沧海飞尘.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@2670feca
+2023-12-07 22:40:42.585  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='沧海飞尘', artist='银临', format='mp3'}
+2023-12-07 22:40:44.283  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:40:44.810  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@683a564
+2023-12-07 22:40:46.263  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:40:46.692  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@1839ac1d
+2023-12-07 22:40:47.802  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 2
+2023-12-07 22:40:48.349  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@124b14cc
+2023-12-07 22:40:49.654  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:40:50.344  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@124b14cc
+2023-12-07 22:40:51.448  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:40:52.016  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.OriginMusicState@2670feca
+2023-12-07 22:41:11.625  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\01-static-resource\03-media-music\Kugou\Download\银临\银临 - 夜国.mp3
+2023-12-07 22:41:11.629  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 夜国   244, path: D:\01-static-resource\03-media-music\Kugou\Download\银临\银临 - 夜国.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@6dab3131
+2023-12-07 22:41:11.630  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='夜国', artist='银临', format='mp3'}
+2023-12-07 22:41:11.630  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\01-static-resource\03-media-music\Kugou\Download\银临\银临 - 沧海飞尘.mp3
+2023-12-07 22:41:11.633  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 沧海飞尘   225, path: D:\01-static-resource\03-media-music\Kugou\Download\银临\银临 - 沧海飞尘.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@2d7ac3cc
+2023-12-07 22:41:11.633  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='沧海飞尘', artist='银临', format='mp3'}
+2023-12-07 22:41:11.633  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - create music: D:\01-static-resource\03-media-music\Kugou\Download\银临\银临 - 眠花去.mp3
+2023-12-07 22:41:11.635  DEBUG [AWT-EventQueue-0] c.y.m.f.WindowsMusicFactory - mp3song-银临: 眠花去   164, path: D:\01-static-resource\03-media-music\Kugou\Download\银临\银临 - 眠花去.mp3, state: com.yelanyanyu.music.music_file.impl.OriginMusicState@42e0639
+2023-12-07 22:41:11.635  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - music add to list: AbstractMusic{songName='眠花去', artist='银临', format='mp3'}
+2023-12-07 22:41:18.058  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - stop 夜国.mp3: 银临
+2023-12-07 22:41:18.059  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play 夜国.mp3: 银临
+2023-12-07 22:41:26.434  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:41:42.074  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - stop 夜国.mp3: 银临
+2023-12-07 22:41:42.074  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play 眠花去.mp3: 银临
+2023-12-07 22:41:55.101  DEBUG [AWT-EventQueue-0] c.y.g.MusicPlayerUi - row1: 1
+2023-12-07 22:41:55.724  DEBUG [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - cur state: com.yelanyanyu.music.music_file.impl.PlayingState@27a29a39
+2023-12-07 22:41:55.880  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - stop 眠花去.mp3: 银临
+2023-12-07 22:41:55.905  INFO  [AWT-EventQueue-0] c.y.m.p.SimpleMusicPlayer - play 夜国.mp3: 银临
+2023-12-07 22:43:49.482  INFO  [main] c.y.g.MusicPlayerUi - MusicPlayerUi init...
