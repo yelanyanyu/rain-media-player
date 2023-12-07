@@ -98,7 +98,6 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
         });
 
 
-
         JButton goToPlayButton = new JButton("进入播放界面");
         goToPlayButton.addActionListener(e -> {
             if (this.playFrame != null) {
@@ -121,6 +120,7 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
         // 播放界面 JFrame
         playFrame = new JFrame("音乐播放界面");
 
+
         // 音乐播放的进度条
         JProgressBar progressBar = new JProgressBar();
 
@@ -133,7 +133,7 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
 
         // 为按钮添加事件处理逻辑
         playButton.addActionListener(e -> {
-            AbstractMusic currentMusic = ((SimpleMusicPlayer) musicPlayer).getCurrentMusic();
+            AbstractMusic currentMusic = getCurrentMusic();
             if (currentMusic.getState().getClass() == PlayingState.class) {
                 musicPlayer.pause();
             } else {
@@ -159,6 +159,10 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
             showPlaylistFrame(); // 显示播放列表的方法
         });
 
+        AbstractMusic currentMusic = getCurrentMusic();
+        if (currentMusic == null) {
+            return;
+        }
         // 设置布局
         playFrame.setLayout(new BorderLayout());
 
@@ -166,7 +170,6 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
         JPanel infoPanel = new JPanel(new GridLayout(2, 1, 5, 1)); // 使用 GridLayout 来放置两个信息标签
 
         String artist = null, songName = null;
-        AbstractMusic currentMusic = getCurrentMusic();
         artist = currentMusic.artist;
         songName = currentMusic.songName;
 
@@ -285,8 +288,12 @@ public class MusicPlayerUi implements PlaybackCompleteListener {
                         2. 如果不在播放则直接删除；
                      2. 重新刷新playList
                     */
+                    ((SimpleMusicPlayer) musicPlayer).deleteFromPlayList(row);
 
                     JOptionPane.showMessageDialog(playlistFrame, "歌曲已删除");
+                    flushCurrentMusic();
+                    playbackCompleted();
+                    showPlaylistFrame();
                 } else {
                     // 用户取消删除，返回播放界面
                     // 如果需要返回播放界面，执行相关逻辑

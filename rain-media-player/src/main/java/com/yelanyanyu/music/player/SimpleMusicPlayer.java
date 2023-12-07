@@ -6,6 +6,8 @@ import com.yelanyanyu.music.factory.WindowsMusicFactory;
 import com.yelanyanyu.music.listener.PlaybackCompleteListener;
 import com.yelanyanyu.music.music_file.AbstractMusic;
 import com.yelanyanyu.music.music_file.impl.MusicStateContext;
+import com.yelanyanyu.music.music_file.impl.PausingState;
+import com.yelanyanyu.music.music_file.impl.PlayingState;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
@@ -81,19 +83,45 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
 
 
     public void deleteFromPlayList(int index) {
-        // TODO: 从队列中指定删除歌曲
-        this.playList.remove(index);
+        /*
+         TODO: 从队列中指定删除歌曲
+         1. 检查当前选中歌曲状态是否为播放中(只有index == 0 的歌曲才有可能播放);
+            1. 如果在播放中，就先stopAndReset, 然后从队列中删除;
+            2. 如果不在播放中, 就直接删除;
+         2. 第一首歌曲有两种可能的状态-> 初始状态，播放状态;
+            1. 对于初始状态，直接删除；
+            2. 对于播放状态则stop再删除, 然后播放下一首歌曲;
+         3. 或者说：
+            1. 对于状态为播放中或者暂停中的音乐就先stop再删除，再播放下一首；
+            2. 对于其他状态的音乐就直接删除
+        */
+
+        AbstractMusic cur = getCurrentMusic();
+        if (cur == null) {
+            return;
+        }
+        log.debug("cur state: {}", cur.getState());
+        if (cur.getState().getClass() == PlayingState.class || cur.getState().getClass() == PausingState.class) {
+            if (index == 0) {
+                resetAndStop();
+            }
+            this.playList.remove(index);
+            play();
+        } else {
+            this.playList.remove(index);
+        }
+
     }
 
     private MusicStateContext currentContext() {
-        AbstractMusic first = playList.getFirst();
-        if (this.context == null) {
-            this.context = first.state;
-        }
+        this.context = getCurrentMusic().state;
         return this.context;
     }
 
     public AbstractMusic getCurrentMusic() {
+        if (this.playList.isEmpty()) {
+            return null;
+        }
         return playList.getFirst();
     }
 
@@ -102,18 +130,27 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
      */
     @Override
     public void play() {
+        if (this.playList.isEmpty()) {
+            return;
+        }
         musicStrategy.play(currentContext());
         log.info("play {}.{}: {}", getCurrentMusic().songName, getCurrentMusic().format, getCurrentMusic().artist);
     }
 
     @Override
     public void pause() {
+        if (this.playList.isEmpty()) {
+            return;
+        }
         musicStrategy.pause(currentContext());
         log.info("pause {}.{}: {}", getCurrentMusic().songName, getCurrentMusic().format, getCurrentMusic().artist);
     }
 
     @Override
     public void resetAndStop() {
+        if (this.playList.isEmpty()) {
+            return;
+        }
         musicStrategy.stop(currentContext());
         log.info("stop {}.{}: {}", getCurrentMusic().songName, getCurrentMusic().format, getCurrentMusic().artist);
     }
