@@ -6,6 +6,10 @@ import com.yelanyanyu.music.player.WindowsMp3MusicStrategy;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableCellEditor;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableColumnModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -78,6 +82,7 @@ public class MusicPlayerUi {
                 SimpleMusicPlayer simpleMusicPlayer = (SimpleMusicPlayer) musicPlayer;
                 // 这里写死. 以后再改
                 simpleMusicPlayer.init(folderPath, new WindowsMp3MusicStrategy());
+                showPlayFrame();
             }
         });
 
@@ -136,30 +141,118 @@ public class MusicPlayerUi {
     }
 
     private void showPlaylistFrame() {
-        // 播放列表界面 JFrameC
+        // 播放列表界面 JFrame
         playlistFrame = new JFrame("播放列表界面");
-        JButton addButton = new JButton("添加");
-        JButton deleteButton = new JButton("删除");
+        playlistFrame.setLayout(new BorderLayout());
+
+        // 表格模型
+        String[] columnNames = {"歌曲名", "演唱者", "播放", "删除"};
+        DefaultTableModel model = new DefaultTableModel(columnNames, 0) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return column >= 2; // 只有操作列可以编辑
+            }
+        };
+
+        // 添加两行示例数据
+        model.addRow(new Object[]{"歌曲1", "演唱者A", "播放", "删除"});
+        model.addRow(new Object[]{"歌曲2", "演唱者B", "播放", "删除"});
+
+        // 创建表格
+        JTable table = new JTable(model);
+
+        // 设置操作列的渲染器和编辑器
+        Action playAction = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO: 实现播放逻辑
+                JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
+            }
+        };
+
+        Action deleteAction = new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO: 实现删除逻辑
+                JOptionPane.showMessageDialog(playlistFrame, "删除歌曲");
+            }
+        };
+
+        new ButtonColumn(table, playAction, 2);
+        new ButtonColumn(table, deleteAction, 3);
+
+        // 将表格添加到滚动窗格中
+        JScrollPane scrollPane = new JScrollPane(table);
+        playlistFrame.add(scrollPane, BorderLayout.CENTER);
+
+        // 返回按钮
         JButton returnToPlayFrameButton = new JButton("返回");
-
-        addButton.addActionListener(e -> {
-            // TODO: 实现添加歌曲到播放列表的逻辑
-        });
-
-        deleteButton.addActionListener(e -> {
-            // TODO: 实现从播放列表删除歌曲的逻辑
-        });
-
         returnToPlayFrameButton.addActionListener(e -> {
             playlistFrame.setVisible(false);
             playFrame.setVisible(true);
         });
 
-        playlistFrame.setLayout(new FlowLayout());
-        playlistFrame.add(addButton);
-        playlistFrame.add(deleteButton);
-        playlistFrame.add(returnToPlayFrameButton);
-        playlistFrame.setSize(400, 200);
+        playlistFrame.add(returnToPlayFrameButton, BorderLayout.SOUTH);
+
+        playlistFrame.setSize(400, 300);
         playlistFrame.setVisible(true);
+    }
+
+    class ButtonColumn extends AbstractCellEditor implements TableCellRenderer, TableCellEditor, ActionListener {
+        JTable table;
+        JButton renderButton;
+        JButton editButton;
+        String text;
+        Action action;
+
+        public ButtonColumn(JTable table, Action action, int column) {
+            super();
+            this.table = table;
+            this.action = action;
+
+            renderButton = new JButton();
+            editButton = new JButton();
+            editButton.setFocusPainted(false);
+            editButton.addActionListener(this);
+
+            TableColumnModel columnModel = table.getColumnModel();
+            columnModel.getColumn(column).setCellRenderer(this);
+            columnModel.getColumn(column).setCellEditor(this);
+        }
+
+        @Override
+        public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+            if (hasFocus) {
+                renderButton.setForeground(table.getForeground());
+                renderButton.setBackground(UIManager.getColor("Button.background"));
+            } else if (isSelected) {
+                renderButton.setForeground(table.getSelectionForeground());
+                renderButton.setBackground(table.getSelectionBackground());
+            } else {
+                renderButton.setForeground(table.getForeground());
+                renderButton.setBackground(UIManager.getColor("Button.background"));
+            }
+
+            renderButton.setText((value == null) ? "" : value.toString());
+            return renderButton;
+        }
+
+        @Override
+        public Component getTableCellEditorComponent(JTable table, Object value, boolean isSelected, int row, int column) {
+            text = (value == null) ? "" : value.toString();
+            editButton.setText(text);
+            return editButton;
+        }
+
+        @Override
+        public Object getCellEditorValue() {
+            return text;
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            fireEditingStopped();
+            action.actionPerformed(e);
+        }
     }
 }
