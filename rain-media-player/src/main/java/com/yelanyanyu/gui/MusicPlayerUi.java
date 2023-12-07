@@ -6,6 +6,7 @@ import com.yelanyanyu.music.player.WindowsMp3MusicStrategy;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
@@ -95,18 +96,20 @@ public class MusicPlayerUi {
 
 
     private void showPlayFrame() {
-        // 播放界面 JFrameB
+        // 播放界面 JFrame
         playFrame = new JFrame("音乐播放界面");
-        /*
-         * 音乐播放的进度条
-         */
+
+        // 音乐播放的进度条
         JProgressBar progressBar = new JProgressBar();
+
+        // 创建按钮
         JButton playButton = new JButton("播放/暂停");
         JButton forwardButton = new JButton("前进");
         JButton backButton = new JButton("后退");
         JButton returnButton = new JButton("返回");
         JButton playlistButton = new JButton("播放列表");
 
+        // 为按钮添加事件处理逻辑
         playButton.addActionListener(e -> {
             // TODO: 实现播放/暂停逻辑
         });
@@ -121,18 +124,49 @@ public class MusicPlayerUi {
 
         returnButton.addActionListener(e -> {
             playFrame.setVisible(false);
-            mainFrame.setVisible(true);
+            // mainFrame.setVisible(true); // 假设 mainFrame 是已存在的其他 JFrame 的引用
         });
 
-        playlistButton.addActionListener(e -> showPlaylistFrame());
+        playlistButton.addActionListener(e -> {
+            showPlaylistFrame(); // 显示播放列表的方法
+        });
 
-        playFrame.setLayout(new FlowLayout());
-        playFrame.add(progressBar);
-        playFrame.add(playButton);
-        playFrame.add(forwardButton);
-        playFrame.add(backButton);
-        playFrame.add(returnButton);
-        playFrame.add(playlistButton);
+        // 设置布局
+        playFrame.setLayout(new BorderLayout());
+
+        // 创建中间信息面板
+        JPanel infoPanel = new JPanel(new GridLayout(2, 1, 5, 1)); // 使用 GridLayout 来放置两个信息标签
+        infoPanel.add(new JLabel("歌曲名"));
+        infoPanel.add(new JLabel("演唱者"));
+
+        // 创建底部按钮面板
+        JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 5, 5));
+        bottomPanel.add(forwardButton);
+        bottomPanel.add(playButton);
+        bottomPanel.add(backButton);
+
+        // 创建顶部面板
+        JPanel topPanel = new JPanel(new BorderLayout());
+        topPanel.add(returnButton, BorderLayout.WEST);
+
+        // 创建右侧播放列表按钮
+        JPanel rightPanel = new JPanel(new BorderLayout());
+        rightPanel.add(playlistButton, BorderLayout.SOUTH);
+        Border lineBorder = BorderFactory.createLineBorder(Color.GRAY);
+
+        // 设置边框到面板
+        infoPanel.setBorder(lineBorder);
+        bottomPanel.setBorder(lineBorder);
+        topPanel.setBorder(lineBorder);
+        rightPanel.setBorder(lineBorder);
+
+        // 将面板和组件添加到 JFrame
+        playFrame.add(topPanel, BorderLayout.NORTH);
+        playFrame.add(infoPanel, BorderLayout.CENTER);
+        playFrame.add(bottomPanel, BorderLayout.SOUTH);
+        playFrame.add(rightPanel, BorderLayout.EAST);
+
+        // 设置窗口大小并显示
         playFrame.setSize(500, 300);
         playFrame.setVisible(true);
     }
@@ -180,7 +214,11 @@ public class MusicPlayerUi {
                 JOptionPane.showMessageDialog(playlistFrame, "播放歌曲");
                 int row = (int) getValue("row");
                 Object[] rowData = getRowData(model, row);
-                
+                // 1. 若播放的歌曲就是第一个，则直接调用 player.play()
+
+                // 2. 若不是第一个，则需要调用player.play(index)
+
+                // 3. 刷新playList
             }
         };
 
@@ -203,6 +241,10 @@ public class MusicPlayerUi {
                     // 用户确认删除
                     // TODO: 实现删除逻辑
                     // 例如：model.removeRow(row);
+                    // 1. player中对应的歌曲删除
+
+                    // 2. 重新刷新playList
+
                     JOptionPane.showMessageDialog(playlistFrame, "歌曲已删除");
                 } else {
                     // 用户取消删除，返回播放界面
