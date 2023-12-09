@@ -41,12 +41,6 @@ public enum SimpleMusicPlayer implements MusicPlayer, PlaybackCompleteListener {
      */
     private int stepLength;
 
-    public static void main(String[] args) throws InterruptedException {
-//        SimpleMusicPlayer instance = SimpleMusicPlayer.INSTANCE;
-//        instance.init("D:\\myCode\\formal-projects\\simple-media-player\\rain-media-player\\src\\test\\resources", new WindowsMp3MusicStrategy());
-//        instance.play();
-    }
-
     public void init(final String folderPath, final MusicStrategy musicStrategy, MusicPlayerUi ui) {
         this.playList = new LinkedList<>();
         this.musicStrategy = musicStrategy;

@@ -5,6 +5,8 @@ import com.yelanyanyu.music.music_file.AbstractMusicState;
 import lombok.Data;
 
 /**
+ * A music state transformer. We define three potential states for music: the origin state, the playing state, the pausing state.
+ *
  * @author yelanyanyu@zjxu.edu.cn
  * @version 1.0
  */
